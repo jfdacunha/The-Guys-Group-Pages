@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pressure Washing Sydney | High Pressure Cleaning Service | The Guys Group</title>
+<meta name="description" content="Professional pressure washing Sydney. Driveway cleaning, roof washing, concrete pressure cleaning, pool area washing and more. Fixed pricing, same-day bookings. Call now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
+<style>
+  :root{
+    --orange:#E8500A;--orange-dark:#C43F06;--orange-light:#FF6B35;
+    --navy:#0D1B2A;--navy-mid:#1A2E42;--navy-light:#243B55;
+    --gold:#F5A623;--green:#2DBE74;--green-dark:#1E9A5C;
+    --charcoal:#1A202C;--slate:#4A5568;--mist:#F7FAFC;--white:#FFFFFF;
+    --shadow-sm:0 2px 8px rgba(10,20,40,0.08);
+    --shadow-md:0 8px 32px rgba(10,20,40,0.14);
+    --shadow-lg:0 20px 60px rgba(10,20,40,0.18);
+    --radius:14px;--radius-lg:20px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"DM Sans",sans-serif;font-size:16px;line-height:1.6;color:var(--charcoal);background:var(--white);overflow-x:hidden}
+  h1,h2,h3,h4{font-family:"Syne",sans-serif;line-height:1.15;color:var(--navy)}
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  .container{width:100%;max-width:1160px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
+  .heading{font-size:clamp(24px,3.2vw,38px);font-weight:800;margin-bottom:14px}
+  .subtext{font-size:16px;color:var(--slate);line-height:1.7}
+  .section{padding:80px 0}
+
+  /* HERO */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 50%,var(--navy-light) 100%);position:relative;overflow:hidden;padding:64px 0 0}
+  .hero::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E")}
+  .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 390px;gap:48px;align-items:start}
+  .hero-brand{display:inline-flex;align-items:center;gap:8px;background:rgba(232,80,10,0.2);border:1px solid rgba(232,80,10,0.45);color:#FF9068;font-size:12px;font-weight:700;padding:6px 14px;border-radius:50px;margin-bottom:16px;letter-spacing:.6px;text-transform:uppercase}
+  .hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(45,190,116,0.2);border:1px solid rgba(45,190,116,0.4);color:#5EEAA5;font-size:12px;font-weight:600;padding:6px 14px;border-radius:50px;margin-bottom:20px;letter-spacing:.6px;text-transform:uppercase}
+  .badge-dot{width:7px;height:7px;background:#2DBE74;border-radius:50%;animation:pd 2s infinite}
+  @keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}
+  .hero h1{font-size:clamp(28px,4.2vw,52px);font-weight:800;color:white;margin-bottom:18px;letter-spacing:-.5px}
+  .hero h1 em{color:#FF9068;font-style:normal}
+  .hero h1 strong{color:#5EEAA5;font-style:normal}
+  .hero-sub{font-size:17px;color:rgba(255,255,255,0.85);margin-bottom:28px;max-width:520px;line-height:1.7}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+  .chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);border-radius:50px;padding:7px 14px;color:rgba(255,255,255,0.9);font-size:13px;font-weight:500}
+  .chip-ok{color:#2DBE74;font-weight:800}
+  .stars-row{display:flex;align-items:center;gap:10px;margin-bottom:28px}
+  .stars{color:#F5A623;font-size:20px;letter-spacing:2px}
+  .stars-txt{color:rgba(255,255,255,0.8);font-size:14px}
+  .stars-txt strong{color:white}
+  .hero-btns{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:52px}
+  .btn-primary{display:inline-flex;align-items:center;gap:9px;background:var(--orange);color:white;font-family:"Syne",sans-serif;font-weight:700;font-size:16px;padding:15px 28px;border-radius:12px;transition:all .2s;box-shadow:0 6px 20px rgba(232,80,10,0.4)}
+  .btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px)}
+  .btn-outline{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.35);color:white;font-family:"Syne",sans-serif;font-weight:600;font-size:15px;padding:14px 22px;border-radius:12px;transition:all .2s}
+  .btn-outline:hover{background:rgba(255,255,255,0.2)}
+  .trust-bar{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:52px}
+  .trust-item{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.8);font-size:13px;font-weight:500}
+  .trust-icon{width:30px;height:30px;border-radius:8px;background:rgba(232,80,10,0.25);border:1px solid rgba(232,80,10,0.4);display:flex;align-items:center;justify-content:center;color:#FF9068;font-size:14px}
+
+  /* FORM */
+  .form-card{background:white;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);overflow:hidden}
+  .form-band{background:var(--orange);padding:16px 24px;text-align:center}
+  .form-band h3{font-size:18px;font-weight:800;color:white;margin:0}
+  .form-band p{font-size:12px;color:rgba(255,255,255,0.9);margin-top:3px}
+  .form-body{padding:18px 24px 24px}
+  .fr{margin-bottom:10px}
+  .fr label{display:block;font-size:10px;font-weight:700;color:var(--slate);margin-bottom:3px;text-transform:uppercase;letter-spacing:.5px}
+  .fr input,.fr select,.fr textarea{width:100%;border:1.5px solid #E2E8F0;border-radius:10px;padding:9px 12px;font-family:"DM Sans",sans-serif;font-size:13px;color:var(--charcoal);transition:border-color .2s,box-shadow .2s;background:#FAFCFF;outline:none}
+  .fr input:focus,.fr select:focus,.fr textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(232,80,10,0.1);background:white}
+  .fr textarea{resize:vertical;min-height:58px}
+  .fg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .recaptcha-wrap{margin:8px 0 4px;display:flex;justify-content:center;transform:scale(0.88);transform-origin:left center}
+  .recaptcha-error{color:#E53E3E;font-size:11px;margin-top:3px;display:none;font-weight:600}
+  .btn-submit{width:100%;background:var(--orange);color:white;font-family:"Syne",sans-serif;font-weight:700;font-size:14px;padding:12px;border:none;border-radius:10px;cursor:pointer;margin-top:6px;transition:all .2s;box-shadow:0 4px 14px rgba(232,80,10,0.35)}
+  .btn-submit:hover{background:var(--orange-dark);transform:translateY(-1px)}
+  .form-note{text-align:center;font-size:11px;color:var(--slate);margin-top:8px}
+  .wave{overflow:hidden;line-height:0;margin-top:52px}
+  .wave svg{display:block}
+
+  /* TRUST STRIP */
+  .trust-strip{background:var(--navy);padding:20px 0}
+  .trust-strip-inner{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
+  .ts-item{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.85);font-size:14px;font-weight:500}
+  .ts-icon{color:var(--orange);font-size:18px}
+
+  /* WHY SECTION */
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:48px}
+  .why-img{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);position:relative}
+  .why-img img{width:100%;height:360px;object-fit:cover;display:block}
+  .why-badge-overlay{position:absolute;bottom:20px;left:20px;background:var(--orange);color:white;font-family:"Syne",sans-serif;font-weight:800;font-size:13px;padding:10px 16px;border-radius:10px;box-shadow:var(--shadow-md)}
+  .why-points{list-style:none;display:flex;flex-direction:column;gap:16px;margin-top:24px}
+  .why-point{display:flex;align-items:flex-start;gap:14px;padding:16px;background:var(--mist);border-radius:12px;border-left:4px solid var(--orange);transition:transform .15s}
+  .why-point:hover{transform:translateX(4px)}
+  .wp-icon{width:36px;height:36px;border-radius:10px;background:rgba(232,80,10,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}
+  .wp-text strong{display:block;font-weight:700;font-size:15px}
+  .wp-text span{font-size:13px;color:var(--slate)}
+
+  /* SERVICES */
+  .svc-bg{background:var(--navy)}
+  .svc-hdr{text-align:center;margin-bottom:44px}
+  .svc-hdr .heading{color:white}
+  .svc-hdr .subtext{color:rgba(255,255,255,0.7)}
+  .svc-hdr .eyebrow{color:#FF9068}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .svc-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);overflow:hidden;transition:all .2s}
+  .svc-card:hover{background:rgba(255,255,255,0.1);transform:translateY(-4px);border-color:rgba(232,80,10,0.5)}
+  .svc-img{width:100%;height:165px;overflow:hidden}
+  .svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .35s;display:block}
+  .svc-card:hover .svc-img img{transform:scale(1.05)}
+  .svc-img-placeholder{width:100%;height:165px;background:linear-gradient(135deg,rgba(232,80,10,0.3),rgba(13,27,42,0.8));display:flex;align-items:center;justify-content:center;font-size:44px}
+  .svc-body{padding:18px}
+  .svc-body h3{font-size:16px;font-weight:700;margin-bottom:7px;color:white}
+  .svc-body p{font-size:13px;color:rgba(255,255,255,0.65);line-height:1.55}
+  .svc-tag{display:inline-block;margin-top:10px;background:rgba(232,80,10,0.2);color:#FF9068;font-size:11px;font-weight:700;padding:4px 10px;border-radius:50px;letter-spacing:.5px;text-transform:uppercase;border:1px solid rgba(232,80,10,0.3)}
+  .svc-cta{text-align:center;margin-top:40px}
+
+  /* BEFORE AFTER */
+  .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;margin-top:48px}
+  .ba-pair{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md)}
+  .ba-pane{position:relative}
+  .ba-pane img{width:100%;height:280px;object-fit:cover;display:block}
+  .ba-pane-placeholder{width:100%;height:280px;display:flex;align-items:center;justify-content:center;font-size:44px;font-family:"Syne",sans-serif;font-weight:800}
+  .ba-pane-placeholder.dirty{background:linear-gradient(135deg,#2d2010,#3d3020)}
+  .ba-pane-placeholder.clean{background:linear-gradient(135deg,#1a4a6e,#0d2d47)}
+  .ba-lbl{position:absolute;bottom:0;left:0;right:0;padding:10px;text-align:center;font-family:"Syne",sans-serif;font-weight:800;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:white}
+  .ba-lbl.b{background:rgba(229,62,62,0.88)}.ba-lbl.a{background:rgba(45,190,116,0.9)}
+  .stats{display:flex;gap:14px;margin-top:22px}
+  .stat{flex:1;background:var(--mist);border:1px solid #E2E8F0;border-radius:var(--radius);padding:16px 10px;text-align:center}
+  .stat .n{font-family:"Syne",sans-serif;font-weight:800;font-size:26px;color:var(--orange)}
+  .stat .l{font-size:11px;color:var(--slate);margin-top:3px;line-height:1.3}
+
+  /* PRICING */
+  .pricing-bg{background:var(--mist)}
+  .pricing-hdr{text-align:center;margin-bottom:44px}
+  .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .price-card{background:white;border-radius:var(--radius);padding:28px 24px;box-shadow:var(--shadow-sm);border:1px solid #E8F0F8;transition:all .2s;position:relative}
+  .price-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px)}
+  .price-card.featured{border-color:var(--orange);border-width:2px;box-shadow:0 8px 32px rgba(232,80,10,0.15)}
+  .price-popular{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--orange);color:white;font-family:"Syne",sans-serif;font-weight:800;font-size:11px;padding:5px 14px;border-radius:50px;letter-spacing:.5px;text-transform:uppercase;white-space:nowrap}
+  .price-icon{font-size:36px;margin-bottom:14px}
+  .price-card h3{font-size:18px;font-weight:800;margin-bottom:6px;color:var(--navy)}
+  .price-from{font-size:12px;color:var(--slate);margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+  .price-amount{font-family:"Syne",sans-serif;font-weight:800;font-size:36px;color:var(--orange);margin-bottom:14px;line-height:1}
+  .price-amount span{font-size:16px;font-weight:600;color:var(--slate)}
+  .price-features{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:20px}
+  .price-features li{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--charcoal)}
+  .price-check{color:var(--green);font-weight:800;font-size:15px}
+  .btn-price{width:100%;background:var(--navy);color:white;font-family:"Syne",sans-serif;font-weight:700;font-size:14px;padding:12px;border:none;border-radius:10px;cursor:pointer;transition:all .2s}
+  .btn-price:hover{background:var(--orange)}
+  .price-card.featured .btn-price{background:var(--orange)}
+  .price-card.featured .btn-price:hover{background:var(--orange-dark)}
+  .pricing-note{text-align:center;margin-top:28px;font-size:14px;color:var(--slate)}
+
+  /* PROCESS */
+  .proc-steps{display:grid;grid-template-columns:repeat(4,1fr);position:relative;margin-top:52px}
+  .proc-steps::before{content:"";position:absolute;top:36px;left:12.5%;right:12.5%;height:2px;background:linear-gradient(90deg,var(--orange) 0%,var(--gold) 100%);z-index:0}
+  .proc-step{text-align:center;padding:0 16px;position:relative;z-index:1}
+  .step-n{width:72px;height:72px;background:white;border:3px solid var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"Syne",sans-serif;font-weight:800;font-size:22px;color:var(--orange);margin:0 auto 18px;box-shadow:var(--shadow-md)}
+  .proc-step:nth-child(2) .step-n{border-color:#D4760A;color:#D4760A}
+  .proc-step:nth-child(3) .step-n{border-color:#B85E08;color:#B85E08}
+  .proc-step:nth-child(4) .step-n{border-color:var(--green);color:var(--green)}
+  .proc-step h3{font-size:15px;font-weight:700;margin-bottom:8px}
+  .proc-step p{font-size:13px;color:var(--slate);line-height:1.6}
+
+  /* REVIEWS */
+  .carousel-outer{width:100%;overflow:hidden}
+  .carousel-wrap{overflow:hidden;border-radius:4px}
+  .carousel-track{display:flex;transition:transform 0.75s cubic-bezier(0.25,0.46,0.45,0.94);will-change:transform}
+  .rev-card{background:white;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm);border:1px solid #F0F4F8;display:flex;flex-direction:column;gap:12px;flex-shrink:0;transition:box-shadow .2s,transform .2s;box-sizing:border-box}
+  .rev-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+  .rev-row{display:flex;align-items:center;gap:12px}
+  .rev-av{width:44px;height:44px;border-radius:50%;color:white;display:flex;align-items:center;justify-content:center;font-family:"Syne",sans-serif;font-weight:700;font-size:16px;flex-shrink:0}
+  .rev-name{font-weight:700;font-size:15px}
+  .rev-sub{font-size:12px;color:var(--slate)}
+  .rev-stars{color:#F5A623;font-size:14px}
+  .rev-text{font-size:14px;color:var(--slate);line-height:1.65;flex:1}
+  .rev-date{font-size:11px;color:#A0AEC0}
+  .carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:24px}
+  .carousel-dot{width:8px;height:8px;border-radius:50%;background:#CBD5E0;border:none;cursor:pointer;transition:all .3s;padding:0}
+  .carousel-dot.active{background:var(--orange);width:24px;border-radius:4px}
+  .g-badge{display:inline-flex;align-items:center;gap:10px;background:white;border:1px solid #E2E8F0;border-radius:12px;padding:10px 18px;box-shadow:var(--shadow-sm);margin-bottom:18px}
+  .g-letters{font-family:"Syne",sans-serif;font-weight:800;font-size:22px}
+  .g-letters .G{color:#4285F4}.g-letters .o1{color:#EA4335}.g-letters .o2{color:#FBBC05}
+  .g-letters .g2{color:#4285F4}.g-letters .l{color:#34A853}.g-letters .e{color:#EA4335}
+  .g-score{font-family:"Syne",sans-serif;font-weight:800;font-size:18px}
+  .g-count{font-size:13px;color:var(--slate)}
+  .g-stars{color:#F5A623;font-size:20px}
+  .rev-btns{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:36px;flex-wrap:wrap}
+  .btn-g{display:inline-flex;align-items:center;gap:9px;background:var(--orange);color:white;font-family:"Syne",sans-serif;font-weight:700;font-size:15px;padding:13px 24px;border-radius:10px;transition:all .2s;margin-top:0}
+  .btn-g:hover{background:var(--orange-dark);transform:translateY(-1px)}
+  .btn-ob{display:inline-flex;align-items:center;gap:9px;border:2px solid var(--navy);color:var(--navy);font-family:"Syne",sans-serif;font-weight:700;font-size:15px;padding:11px 20px;border-radius:10px;transition:all .2s;margin-top:0}
+  .btn-ob:hover{background:var(--navy);color:white}
+  .urgency{background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.35);color:#92620A;border-radius:50px;padding:7px 16px;font-size:13px;font-weight:600}
+
+  /* MAP */
+  .map-bg{background:linear-gradient(180deg,#EFF6FF 0%,var(--mist) 100%)}
+  .map-layout{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:48px}
+  .map-circle-wrap{display:flex;justify-content:center}
+  .map-circle{width:380px;height:380px;border-radius:50%;overflow:hidden;border:6px solid white;box-shadow:0 0 0 3px var(--orange),var(--shadow-lg);position:relative;flex-shrink:0}
+  .map-circle iframe{width:100%;height:100%;border:0;display:block;pointer-events:none}
+  .map-points{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+  .map-point{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--charcoal);font-weight:500}
+  .map-dot{width:10px;height:10px;border-radius:50%;background:var(--orange);flex-shrink:0}
+
+  /* FAQ */
+  .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px}
+  .faq-item{background:white;border-radius:var(--radius);border:1px solid #E2E8F0;overflow:hidden;box-shadow:var(--shadow-sm)}
+  .faq-q{width:100%;background:none;border:none;padding:18px 22px;text-align:left;font-family:"Syne",sans-serif;font-weight:700;font-size:14px;color:var(--navy);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;transition:background .2s}
+  .faq-q:hover{background:var(--mist)}
+  .faq-q .faq-icon{width:24px;height:24px;border-radius:50%;background:var(--orange);color:white;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;flex-shrink:0;transition:transform .3s}
+  .faq-q.open .faq-icon{transform:rotate(45deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .faq-a.open{max-height:300px}
+  .faq-a p{padding:0 22px 18px;font-size:14px;color:var(--slate);line-height:1.7}
+
+  /* FINAL CTA */
+  .fcta{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);padding:80px 0;position:relative;overflow:hidden;text-align:center}
+  .fcta::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.06'/%3E%3C/svg%3E") repeat}
+  .fcta-inner{position:relative;z-index:1}
+  .fcta h2{font-size:clamp(26px,4vw,44px);font-weight:800;color:white;margin-bottom:14px}
+  .fcta p{font-size:17px;color:rgba(255,255,255,0.82);margin-bottom:34px;max-width:540px;margin-left:auto;margin-right:auto}
+  .fcta-btns{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+  .btn-orange-solid{display:inline-flex;align-items:center;gap:9px;background:var(--orange);color:white;font-family:"Syne",sans-serif;font-weight:800;font-size:16px;padding:15px 28px;border-radius:12px;transition:all .2s;box-shadow:0 6px 20px rgba(232,80,10,0.45)}
+  .btn-orange-solid:hover{background:var(--orange-dark);transform:translateY(-2px)}
+  .btn-white-solid{display:inline-flex;align-items:center;gap:9px;background:white;color:var(--navy);font-family:"Syne",sans-serif;font-weight:800;font-size:16px;padding:15px 28px;border-radius:12px;transition:all .2s;box-shadow:0 6px 20px rgba(0,0,0,0.15)}
+  .btn-white-solid:hover{transform:translateY(-2px)}
+  .ftrust{margin-top:28px;color:rgba(255,255,255,0.7);font-size:14px;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap}
+
+  /* FINAL FORM */
+  .ff-grid{display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:center}
+  .ff-copy h2{font-size:clamp(24px,3vw,36px);font-weight:800;margin-bottom:14px}
+  .ff-copy p{font-size:16px;color:var(--slate);margin-bottom:24px}
+  .perks{list-style:none;display:flex;flex-direction:column;gap:11px}
+  .perks li{display:flex;align-items:center;gap:10px;font-size:15px}
+  .pck{color:var(--green);font-size:18px;font-weight:800}
+  .ff-card{background:white;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);overflow:hidden}
+  .ff-card-inner{padding:28px}
+  .ff-card h3{font-size:20px;font-weight:800;margin-bottom:4px}
+  .ff-card > .ff-card-inner > p{font-size:13px;color:var(--slate);margin-bottom:18px}
+
+  /* FLOAT */
+  .float-cta{position:fixed;bottom:22px;right:22px;z-index:900}
+  .float-btn{display:flex;align-items:center;gap:9px;background:var(--orange);color:white;font-family:"Syne",sans-serif;font-weight:700;font-size:14px;padding:13px 20px;border-radius:12px;box-shadow:0 6px 24px rgba(232,80,10,0.45);transition:all .2s;animation:bi .6s ease-out}
+  .float-btn:hover{background:var(--orange-dark);transform:translateY(-2px)}
+  @keyframes bi{0%{transform:translateY(80px);opacity:0}80%{transform:translateY(-4px)}100%{transform:translateY(0);opacity:1}}
+
+  /* MOBILE */
+  @media(max-width:960px){
+    .hero-inner,.why-grid,.ba-grid,.ff-grid,.map-layout{grid-template-columns:1fr;gap:32px}
+    .hero{padding:44px 0 0}
+    .svc-grid{grid-template-columns:1fr 1fr}
+    .pricing-grid{grid-template-columns:1fr}
+    .proc-steps{grid-template-columns:1fr 1fr;gap:32px}
+    .proc-steps::before{display:none}
+    .faq-grid{grid-template-columns:1fr}
+    .map-circle{width:300px;height:300px}
+    .map-layout{grid-template-columns:1fr;gap:32px}
+  }
+  @media(max-width:640px){
+    .svc-grid,.proc-steps{grid-template-columns:1fr}
+    .fg{grid-template-columns:1fr}
+    .btn-primary,.btn-orange-solid,.btn-white-solid{width:100%;justify-content:center}
+    .ba-pair{grid-template-columns:1fr}
+    .ba-pane img,.ba-pane-placeholder{height:200px}
+    .map-circle{width:260px;height:260px}
+    .map-points{grid-template-columns:1fr}
+    .trust-strip-inner{gap:20px}
+    .pricing-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-brand">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+          The Guys Group &mdash; Sydney
+        </div>
+        <div class="hero-badge"><span class="badge-dot"></span> Same-Day Bookings Available</div>
+        <h1><em>Pressure Washing</em> Sydney<br><strong>Professional High Pressure Cleaning</strong></h1>
+        <p class="hero-sub">We blast away years of built-up grime, mould, oil stains and dirt from driveways, roofs, concrete, pool areas and more. Fast, fixed pricing, no surprises.</p>
+        <div class="chips">
+          <div class="chip"><span class="chip-ok">&#10003;</span> Fixed pricing</div>
+          <div class="chip"><span class="chip-ok">&#10003;</span> Residential and commercial</div>
+          <div class="chip"><span class="chip-ok">&#10003;</span> All Sydney suburbs</div>
+          <div class="chip"><span class="chip-ok">&#10003;</span> Fully insured</div>
+          <div class="chip"><span class="chip-ok">&#10003;</span> Same-day available</div>
+        </div>
+        <div class="stars-row">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="stars-txt"><strong>5.0</strong> rated by <strong>500+ Sydney properties</strong> cleaned</span>
+        </div>
+        <div class="hero-btns">
+          <a href="tel:0000000000" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 010 1.19h3a2 2 0 012 1.72 13.1 13.1 0 00.67 2.95 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.19-1.19a2 2 0 012.11-.45 13.1 13.1 0 002.95.67A2 2 0 0122 16.92z"/></svg>
+            Call for a Free Quote
+          </a>
+          <a href="#quote" class="btn-outline">Get a Quote Online &#8594;</a>
+        </div>
+        <div class="trust-bar">
+          <div class="trust-item"><div class="trust-icon">&#10003;</div> Transparent Pricing</div>
+          <div class="trust-item"><div class="trust-icon">&#127968;</div> Residential and Commercial</div>
+          <div class="trust-item"><div class="trust-icon">&#128737;</div> Fully Insured</div>
+          <div class="trust-item"><div class="trust-icon">&#9733;</div> 10+ Years Experience</div>
+        </div>
+      </div>
+      <div class="form-card" id="quote">
+        <div class="form-band">
+          <h3>Free Pressure Washing Quote</h3>
+          <p>Fast response &mdash; usually same day</p>
+        </div>
+        <div class="form-body">
+          <div class="fg">
+            <div class="fr"><label>Name</label><input type="text" placeholder="Your name"></div>
+            <div class="fr"><label>Phone</label><input type="tel" placeholder="04xx xxx xxx"></div>
+          </div>
+          <div class="fr"><label>Email</label><input type="email" placeholder="you@email.com"></div>
+          <div class="fr"><label>Suburb / Postcode</label><input type="text" placeholder="e.g. Parramatta 2150"></div>
+          <div class="fr"><label>Service Needed</label>
+            <select>
+              <option>Driveway Pressure Washing</option>
+              <option>High Pressure Cleaning</option>
+              <option>Concrete Pressure Cleaning</option>
+              <option>Roof Pressure Washing</option>
+              <option>Pool Area Pressure Washing</option>
+              <option>Water Blasting</option>
+              <option>Commercial Pressure Washing</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="fr"><label>Message (optional)</label><textarea placeholder="Surface type, size, any stubborn stains..."></textarea></div>
+          <div class="recaptcha-wrap"><div class="g-recaptcha"></div></div>
+          <div class="recaptcha-error">Please confirm you are not a robot.</div>
+          <button class="btn-submit" type="button" onclick="submitForm(this)">Get My Free Quote</button>
+          <p class="form-note">No spam. No obligation. 100% free.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none" style="height:48px;width:100%;display:block;">
+      <path fill="#ffffff" d="M0,24 C360,50 1080,-2 1440,24 L1440,48 L0,48 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="container">
+    <div class="trust-strip-inner">
+      <div class="ts-item"><span class="ts-icon">&#10003;</span> Transparent Fixed Pricing</div>
+      <div class="ts-item"><span class="ts-icon">&#127968;</span> Residential and Commercial</div>
+      <div class="ts-item"><span class="ts-icon">&#128737;</span> Fully Insured</div>
+      <div class="ts-item"><span class="ts-icon">&#9733;</span> 500+ Sydney Properties Cleaned</div>
+      <div class="ts-item"><span class="ts-icon">&#128336;</span> Same-Day Available</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY PRESSURE WASHING -->
+<section class="section" style="background:white">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <p class="eyebrow">Professional Pressure Washing Sydney</p>
+        <h2 class="heading">Why Professional High Pressure Cleaning Makes All the Difference</h2>
+        <p class="subtext">A standard garden hose does not come close. Our professional-grade high pressure washing equipment blasts away years of built-up grime, mould, oil stains and weathering that nothing else can touch.</p>
+        <ul class="why-points" style="margin-top:24px">
+          <li class="why-point">
+            <span class="wp-icon">&#128166;</span>
+            <div class="wp-text"><strong>Removes what other methods cannot</strong><span>Professional water blasting reaches deep into porous surfaces to eliminate embedded dirt, mould and staining.</span></div>
+          </li>
+          <li class="why-point">
+            <span class="wp-icon">&#128200;</span>
+            <div class="wp-text"><strong>Restores and protects your property value</strong><span>A clean exterior dramatically improves kerb appeal and protects surfaces from long-term damage caused by mould and buildup.</span></div>
+          </li>
+          <li class="why-point">
+            <span class="wp-icon">&#9201;</span>
+            <div class="wp-text"><strong>Fast, efficient and no mess left behind</strong><span>Our team arrives fully equipped, completes the job efficiently and leaves your property spotless. No surprises, no mess.</span></div>
+          </li>
+          <li class="why-point">
+            <span class="wp-icon">&#128176;</span>
+            <div class="wp-text"><strong>Fixed pricing with no hidden fees</strong><span>You get a clear upfront price before we start. What we quote is what you pay. No last-minute additions.</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="why-img">
+        <div style="width:100%;height:360px;background:linear-gradient(135deg,#1a2e42,#0d3a5c);display:flex;align-items:center;justify-content:center;border-radius:var(--radius-lg)">
+          <div style="text-align:center;color:rgba(255,255,255,0.4)">
+            <div style="font-size:64px;margin-bottom:12px">&#128166;</div>
+            <div style="font-family:Syne,sans-serif;font-weight:700;font-size:16px">Photos coming soon</div>
+          </div>
+        </div>
+        <div class="why-badge-overlay">500+ Sydney Properties Cleaned</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section svc-bg">
+  <div class="container">
+    <div class="svc-hdr">
+      <p class="eyebrow">Our Pressure Washing Services</p>
+      <h2 class="heading">What We Clean and How We Do It</h2>
+      <p class="subtext" style="max-width:540px;margin:0 auto;text-align:center">From driveway washing to roof pressure cleaning and everything in between. Professional high pressure cleaning for every surface.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-img-placeholder">&#127968;</div>
+        <div class="svc-body">
+          <h3>Driveway Cleaning Services</h3>
+          <p>We remove oil stains, tyre marks, dirt and mould from concrete, pavers and asphalt driveways. Our driveway washing service restores your entrance to near-new condition.</p>
+          <span class="svc-tag">Most Popular</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img-placeholder">&#127968;</div>
+        <div class="svc-body">
+          <h3>Concrete Pressure Cleaning</h3>
+          <p>Our concrete pressure cleaner service targets paths, patios, garage floors and pool surrounds. We remove deep-set staining that standard cleaning cannot touch.</p>
+          <span class="svc-tag">High Demand</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img-placeholder">&#9728;</div>
+        <div class="svc-body">
+          <h3>Roof Pressure Washing</h3>
+          <p>Safe, effective pressure washing roof service that removes lichen, moss, mould and years of weathering from tile and Colorbond roofs across Sydney.</p>
+          <span class="svc-tag">Specialist Service</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img-placeholder">&#128167;</div>
+        <div class="svc-body">
+          <h3>Pool Area Pressure Washing</h3>
+          <p>We clean pool surrounds, coping tiles, retaining walls and decking. Our pressure washing pool service removes algae, calcium deposits and grime safely.</p>
+          <span class="svc-tag">Summer Ready</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img-placeholder">&#127970;</div>
+        <div class="svc-body">
+          <h3>Commercial Pressure Washing</h3>
+          <p>We service commercial properties, car parks, warehouses, retail centres and strata buildings across Sydney. Regular scheduled pressure cleaning available.</p>
+          <span class="svc-tag">Commercial</span>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img-placeholder">&#128166;</div>
+        <div class="svc-body">
+          <h3>Water Blasting and Power Washing</h3>
+          <p>For stubborn stains, industrial grime and heavy buildup, our water blasting and power washing service delivers maximum pressure where it is needed most.</p>
+          <span class="svc-tag">Heavy Duty</span>
+        </div>
+      </div>
+    </div>
+    <div class="svc-cta">
+      <a href="tel:0000000000" class="btn-primary">Call for a Free Quote Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="section" style="background:var(--mist)">
+  <div class="container">
+    <div class="ba-grid">
+      <div>
+        <div class="ba-pair">
+          <div class="ba-pane">
+            <div class="ba-pane-placeholder dirty">
+              <div style="text-align:center;color:rgba(255,200,100,0.6)">
+                <div style="font-size:48px">&#129718;</div>
+                <div style="font-family:Syne,sans-serif;font-weight:700;font-size:13px;margin-top:8px">Before</div>
+              </div>
+            </div>
+            <div class="ba-lbl b">Before</div>
+          </div>
+          <div class="ba-pane">
+            <div class="ba-pane-placeholder clean">
+              <div style="text-align:center;color:rgba(100,200,255,0.7)">
+                <div style="font-size:48px">&#10024;</div>
+                <div style="font-family:Syne,sans-serif;font-weight:700;font-size:13px;margin-top:8px">After</div>
+              </div>
+            </div>
+            <div class="ba-lbl a">After</div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="n">95%</div><div class="l">Stain removal rate</div></div>
+          <div class="stat"><div class="n">500+</div><div class="l">Sydney properties cleaned</div></div>
+          <div class="stat"><div class="n">1 day</div><div class="l">Average job turnaround</div></div>
+        </div>
+        <p style="font-size:13px;color:var(--slate);margin-top:14px;font-style:italic">Real job photos will be added here shortly.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Before and After Results</p>
+        <h2 class="heading">See What a Professional <span style="color:var(--orange)">Pressure Wash</span> Actually Does</h2>
+        <p class="subtext">The results speak for themselves. From oil-stained driveways to mould-covered roofs, our high pressure cleaning service transforms Sydney properties every single day.</p>
+        <p class="subtext" style="margin-top:14px">We use professional-grade equipment and the right technique for every surface. That means maximum results with no damage to your property.</p>
+        <div>
+          <a href="tel:0000000000" class="btn-g" style="margin-top:24px;margin-right:12px">Book a Pressure Wash Now</a>
+          <a href="#quote" class="btn-ob" style="margin-top:24px">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section pricing-bg">
+  <div class="container">
+    <div class="pricing-hdr">
+      <p class="eyebrow">No Surprises Fixed Pricing</p>
+      <h2 class="heading">Upfront Pressure Washing Prices</h2>
+      <p class="subtext" style="max-width:520px;margin:0 auto;text-align:center">We believe in total transparency. Here are our starting prices. Your final quote is confirmed before we start and that is exactly what you pay.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-icon">&#127968;</div>
+        <h3>Driveway Washing</h3>
+        <div class="price-from">Starting from</div>
+        <div class="price-amount">$199<span></span></div>
+        <ul class="price-features">
+          <li><span class="price-check">&#10003;</span> Single or double driveway</li>
+          <li><span class="price-check">&#10003;</span> Oil and tyre stain removal</li>
+          <li><span class="price-check">&#10003;</span> Mould and algae treatment</li>
+          <li><span class="price-check">&#10003;</span> Concrete and pavers</li>
+          <li><span class="price-check">&#10003;</span> Fixed price, no surprises</li>
+        </ul>
+        <button class="btn-price" onclick="window.location.href='#quote'">Get a Quote</button>
+      </div>
+      <div class="price-card featured">
+        <div class="price-popular">Most Popular</div>
+        <div class="price-icon">&#127968;</div>
+        <h3>Full Exterior Clean</h3>
+        <div class="price-from">Starting from</div>
+        <div class="price-amount">$349<span></span></div>
+        <ul class="price-features">
+          <li><span class="price-check">&#10003;</span> Driveway and paths</li>
+          <li><span class="price-check">&#10003;</span> Patio and entertaining area</li>
+          <li><span class="price-check">&#10003;</span> Fences and retaining walls</li>
+          <li><span class="price-check">&#10003;</span> Pool surrounds included</li>
+          <li><span class="price-check">&#10003;</span> Full property pressure wash</li>
+        </ul>
+        <button class="btn-price" onclick="window.location.href='#quote'">Get a Quote</button>
+      </div>
+      <div class="price-card">
+        <div class="price-icon">&#9728;</div>
+        <h3>Roof Pressure Washing</h3>
+        <div class="price-from">Starting from</div>
+        <div class="price-amount">$299<span></span></div>
+        <ul class="price-features">
+          <li><span class="price-check">&#10003;</span> Tile and Colorbond roofs</li>
+          <li><span class="price-check">&#10003;</span> Lichen and moss removal</li>
+          <li><span class="price-check">&#10003;</span> Mould and weathering treatment</li>
+          <li><span class="price-check">&#10003;</span> Gutter flush included</li>
+          <li><span class="price-check">&#10003;</span> Safe, controlled pressure</li>
+        </ul>
+        <button class="btn-price" onclick="window.location.href='#quote'">Get a Quote</button>
+      </div>
+    </div>
+    <p class="pricing-note">All prices are starting rates. Final price confirmed before work begins. Commercial and large properties quoted individually.</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" style="background:white">
+  <div class="container">
+    <div style="text-align:center">
+      <p class="eyebrow">How It Works</p>
+      <h2 class="heading">Our Pressure Washing Process</h2>
+      <p class="subtext" style="max-width:480px;margin:0 auto;text-align:center">Simple, professional and done right every time. Here is exactly what happens when you book with The Guys Group.</p>
+    </div>
+    <div class="proc-steps">
+      <div class="proc-step">
+        <div class="step-n">1</div>
+        <h3>Inspection and Quote</h3>
+        <p>We assess your surfaces, identify the right pressure and technique, and give you a clear fixed price before we touch anything.</p>
+      </div>
+      <div class="proc-step">
+        <div class="step-n">2</div>
+        <h3>Professional Preparation</h3>
+        <p>We protect surrounding areas, apply pre-treatment to stubborn stains and mould, and set up our professional pressure washing equipment.</p>
+      </div>
+      <div class="proc-step">
+        <div class="step-n">3</div>
+        <h3>High Pressure Cleaning</h3>
+        <p>Our team works methodically across every surface using the correct pressure and nozzle for each material. No shortcuts, no damage.</p>
+      </div>
+      <div class="proc-step">
+        <div class="step-n">4</div>
+        <h3>Final Check and Quality Sign Off</h3>
+        <p>We walk the property with you, confirm every surface meets our standard and make sure you are completely satisfied before we leave.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" style="background:var(--mist)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:44px">
+      <div class="g-badge">
+        <span class="g-letters"><span class="G">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span></span>
+        <span class="g-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <div><div class="g-score">5.0 / 5.0</div><div class="g-count">Based on verified Sydney reviews</div></div>
+      </div>
+      <p class="eyebrow">What Sydney Customers Say</p>
+      <h2 class="heading">Real Reviews from Real Sydney Homeowners</h2>
+    </div>
+    <div class="carousel-outer">
+      <div class="carousel-wrap">
+        <div class="carousel-track" id="revTrack">
+
+          <div class="rev-card">
+            <div class="rev-row"><div class="rev-av" style="background:#E8500A">M</div><div><div class="rev-name">Michael T.</div><div class="rev-sub">Parramatta, NSW</div></div></div>
+            <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="rev-text">Had our driveway pressure washed and it looks brand new. Fourteen years of oil stains and tyre marks completely gone in a few hours. Absolutely worth every cent. Will book again for the patio.</p>
+            <div class="rev-date">1 week ago &middot; Driveway Cleaning Sydney</div>
+          </div>
+
+          <div class="rev-card">
+            <div class="rev-row"><div class="rev-av" style="background:#1A4A6E">S</div><div><div class="rev-name">Sandra L.</div><div class="rev-sub">Castle Hill, NSW</div></div></div>
+            <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="rev-text">Booked for a full exterior clean. The team was professional, on time and the results are incredible. Pool area, driveway and paths all done in one visit. Fixed price as quoted, no surprises.</p>
+            <div class="rev-date">2 weeks ago &middot; Pressure Washing Sydney</div>
+          </div>
+
+          <div class="rev-card">
+            <div class="rev-row"><div class="rev-av" style="background:#2D7D2D">D</div><div><div class="rev-name">David K.</div><div class="rev-sub">Bondi, NSW</div></div></div>
+            <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="rev-text">Used them for concrete pressure cleaning on our commercial property. Very efficient, great communication and the carpark looks completely different. Will be setting up a regular schedule.</p>
+            <div class="rev-date">3 days ago &middot; Commercial Pressure Washing</div>
+          </div>
+
+          <div class="rev-card">
+            <div class="rev-row"><div class="rev-av" style="background:#7C3AED">J</div><div><div class="rev-name">Jenny W.</div><div class="rev-sub">Penrith, NSW</div></div></div>
+            <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="rev-text">Got the roof pressure washed after years of lichen buildup. The difference is night and day. Our roof looks ten years younger. The guys were safe, fast and very professional.</p>
+            <div class="rev-date">1 month ago &middot; Roof Pressure Washing</div>
+          </div>
+
+          <div class="rev-card">
+            <div class="rev-row"><div class="rev-av" style="background:#B45309">R</div><div><div class="rev-name">Robert F.</div><div class="rev-sub">Hornsby, NSW</div></div></div>
+            <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="rev-text">Searched pressure cleaning near me and found The Guys Group. Same-day booking, arrived exactly on time. Driveway and front path done perfectly. Neighbours have already asked for the number.</p>
+            <div class="rev-date">5 days ago &middot; Pressure Cleaning Near Me</div>
+          </div>
+
+          <div class="rev-card">
+            <div class="rev-row"><div class="rev-av" style="background:#0F5A96">A</div><div><div class="rev-name">Angela M.</div><div class="rev-sub">Manly, NSW</div></div></div>
+            <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="rev-text">Pool area and surrounding tiles were covered in algae and looked terrible. After one visit from The Guys Group it looks better than when we moved in. Highly recommend for anyone near the water.</p>
+            <div class="rev-date">2 weeks ago &middot; Pool Area Pressure Washing</div>
+          </div>
+
+          <div class="rev-card">
+            <div class="rev-row"><div class="rev-av" style="background:#059669">C</div><div><div class="rev-name">Chris B.</div><div class="rev-sub">Liverpool, NSW</div></div></div>
+            <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="rev-text">High pressure cleaning on our warehouse forecourt. Big job done in a single day. Great price, no mess, no fuss. The team knew exactly what they were doing. Will be back next quarter.</p>
+            <div class="rev-date">3 weeks ago &middot; High Pressure Cleaning Sydney</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="carousel-dots" id="revDots"></div>
+    <div class="rev-btns">
+      <a href="tel:0000000000" class="btn-g">Call for a Free Quote</a>
+      <a href="#quote" class="btn-ob">Get a Quote Online</a>
+      <div class="urgency">Same-day bookings available</div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="section map-bg">
+  <div class="container">
+    <div style="text-align:center;max-width:620px;margin:0 auto">
+      <p class="eyebrow">Pressure Cleaning Near Me</p>
+      <h2 class="heading">We Cover the Entire Sydney Metropolitan Area</h2>
+      <p class="subtext">From the Eastern Suburbs to Penrith, North Sydney to Sutherland. If you are searching for pressure washing near me or high pressure cleaning Sydney, we are your local team.</p>
+    </div>
+    <div class="map-layout">
+      <div class="map-circle-wrap">
+        <div class="map-circle">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d424146.02715945663!2d150.9578366!3d-33.8688197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:22px;font-weight:800;margin-bottom:8px;color:var(--navy)">Servicing All Sydney Suburbs</h3>
+        <p class="subtext" style="margin-bottom:24px">Our pressure washing teams operate across the entire Sydney metro area seven days a week. Same-day bookings available.</p>
+        <ul class="map-points">
+          <li><span class="map-dot"></span> Parramatta</li>
+          <li><span class="map-dot"></span> North Sydney</li>
+          <li><span class="map-dot"></span> Eastern Suburbs</li>
+          <li><span class="map-dot"></span> Inner West</li>
+          <li><span class="map-dot"></span> Hills District</li>
+          <li><span class="map-dot"></span> Penrith</li>
+          <li><span class="map-dot"></span> Hornsby</li>
+          <li><span class="map-dot"></span> Blacktown</li>
+          <li><span class="map-dot"></span> Liverpool</li>
+          <li><span class="map-dot"></span> Sutherland</li>
+          <li><span class="map-dot"></span> Manly</li>
+          <li><span class="map-dot"></span> Castle Hill</li>
+        </ul>
+        <a href="tel:0000000000" class="btn-g" style="margin-top:28px">Book in Your Area Today</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:white">
+  <div class="container">
+    <div style="text-align:center;max-width:580px;margin:0 auto">
+      <p class="eyebrow">Frequently Asked Questions</p>
+      <h2 class="heading">Pressure Washing Sydney FAQ</h2>
+      <p class="subtext">Everything you need to know about our pressure washing, high pressure cleaning and driveway washing services in Sydney.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How much does pressure washing cost in Sydney?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Our driveway cleaning services start from $199, full exterior cleans from $349 and roof pressure washing from $299. Every job is quoted upfront with a fixed price so you always know exactly what you are paying before we start. No hidden fees, no surprises.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How long does pressure washing take?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Most residential jobs are completed within a single day. A standard driveway washing job takes 2 to 3 hours. A full exterior clean including paths, patio and pool area takes 4 to 6 hours. We give you a clear time estimate before we begin.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Is high pressure cleaning safe for all surfaces?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes, when done by professionals. We assess every surface before we start and use the correct pressure, technique and nozzle for each material. Concrete, pavers, tiles, Colorbond, timber and brick all require different approaches. Our team is trained to deliver results without causing damage.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Do you offer same-day pressure washing in Sydney?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes. We offer same-day bookings across all Sydney suburbs subject to availability. Call us and we will do everything we can to get a team to you today. You can also submit a quote request online and we will respond within hours.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What is the difference between pressure washing and water blasting?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Water blasting uses higher pressure and is suited to heavy-duty industrial grime, thick oil stains and stubborn buildup on hard surfaces. Pressure washing uses controlled pressure suited for residential driveways, roofs, concrete and pool areas. We use both and recommend the right approach based on your surface and the level of contamination.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How often should I get my driveway pressure washed?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>We recommend driveway washing every 12 to 18 months for most Sydney homes. If you have heavy vehicle traffic, oil drips or live near the coast where salt builds up, every 6 to 12 months is ideal. Regular pressure cleaning also protects your surface from long-term staining and weathering damage.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="fcta">
+  <div class="container fcta-inner">
+    <h2>Ready for a Cleaner Property?</h2>
+    <p>Join 500+ Sydney property owners who trust The Guys Group for professional pressure washing. Fixed pricing, same-day bookings, results guaranteed.</p>
+    <div class="fcta-btns">
+      <a href="tel:0000000000" class="btn-orange-solid">Call for a Free Quote</a>
+      <a href="#quote" class="btn-white-solid">Get a Quote Online &#8594;</a>
+    </div>
+    <div class="ftrust">
+      <span>&#10003; Fixed transparent pricing</span>
+      <span>&#10003; Same-day available</span>
+      <span>&#10003; All Sydney suburbs</span>
+      <span>&#10003; Fully insured</span>
+      <span>&#10003; Results guaranteed</span>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL FORM -->
+<section class="section" style="background:var(--mist)">
+  <div class="container">
+    <div class="ff-grid">
+      <div class="ff-copy">
+        <p class="eyebrow">Free Quote, No Obligation</p>
+        <h2 class="heading" style="max-width:400px">Get Your Free Pressure Washing Quote Today</h2>
+        <p>Tell us about your property and we will come back with a clear upfront price. No hidden fees. No hard sell.</p>
+        <ul class="perks">
+          <li><span class="pck">&#10003;</span> Free, no-obligation quotes</li>
+          <li><span class="pck">&#10003;</span> Fixed upfront pricing</li>
+          <li><span class="pck">&#10003;</span> Residential and commercial</li>
+          <li><span class="pck">&#10003;</span> Same-day service available</li>
+          <li><span class="pck">&#10003;</span> Fully insured team</li>
+          <li><span class="pck">&#10003;</span> All surfaces, all Sydney suburbs</li>
+          <li><span class="pck">&#10003;</span> Prefer to talk? <a href="tel:0000000000" style="color:var(--orange);font-weight:700">Call us now</a></li>
+        </ul>
+      </div>
+      <div class="ff-card">
+        <div class="ff-card-inner">
+          <h3>Free Quote Request</h3>
+          <p>We respond within hours, usually same day.</p>
+          <div class="fg">
+            <div class="fr"><label>Name</label><input type="text" placeholder="Your name"></div>
+            <div class="fr"><label>Phone</label><input type="tel" placeholder="04xx xxx xxx"></div>
+          </div>
+          <div class="fr"><label>Email</label><input type="email" placeholder="you@email.com"></div>
+          <div class="fr"><label>Postcode</label><input type="text" placeholder="e.g. 2000"></div>
+          <div class="fr"><label>Service</label>
+            <select>
+              <option>Driveway Pressure Washing</option>
+              <option>Concrete Pressure Cleaning</option>
+              <option>Roof Pressure Washing</option>
+              <option>Pool Area Washing</option>
+              <option>Full Exterior Clean</option>
+              <option>Commercial Pressure Washing</option>
+              <option>Water Blasting</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fr"><label>Message</label><textarea placeholder="Surface type, size, any stubborn stains or mould..."></textarea></div>
+          <div class="recaptcha-wrap"><div class="g-recaptcha"></div></div>
+          <div class="recaptcha-error">Please confirm you are not a robot.</div>
+          <button class="btn-submit" type="button" onclick="submitForm(this)">Send My Free Quote Request</button>
+          <p class="form-note">100% free. No spam. No obligation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="float-cta">
+  <a href="tel:0000000000" class="float-btn">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 010 1.19h3a2 2 0 012 1.72 13.1 13.1 0 00.67 2.95 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.19-1.19a2 2 0 012.11-.45 13.1 13.1 0 002.95.67A2 2 0 0122 16.92z"/></svg>
+    Call for Same-Day Booking
+  </a>
+</div>
+
+<script>
+function toggleFaq(btn){
+  var item=btn.parentElement;
+  var ans=item.querySelector('.faq-a');
+  document.querySelectorAll('.faq-item').forEach(function(i){
+    if(i!==item){i.querySelector('.faq-q').classList.remove('open');i.querySelector('.faq-a').classList.remove('open');}
+  });
+  btn.classList.toggle('open');ans.classList.toggle('open');
+}
+
+var recaptchaWidgets=[];
+function onRecaptchaLoad(){
+  document.querySelectorAll('.g-recaptcha').forEach(function(el){
+    var id=grecaptcha.render(el,{sitekey:'6LfsYBQtAAAAENaSc8RXEu78LsxCT7iUtkep-K8'});
+    el.setAttribute('data-widget-id',id);
+    recaptchaWidgets.push(id);
+  });
+}
+function submitForm(btn){
+  var p=btn;
+  for(var i=0;i<6;i++){p=p.parentElement;if(!p)break;var rc=p.querySelector('.g-recaptcha');if(rc){break;}}
+  var rcEl=p?p.querySelector('.g-recaptcha'):null;
+  var errEl=p?p.querySelector('.recaptcha-error'):null;
+  var wid=rcEl?rcEl.getAttribute('data-widget-id'):null;
+  var resp=wid!==null?grecaptcha.getResponse(parseInt(wid)):grecaptcha.getResponse();
+  if(!resp||resp.length===0){if(errEl)errEl.style.display='block';return;}
+  if(errEl)errEl.style.display='none';
+  window.location.href='https://theguysgroup.com.au/thank-you/';
+}
+
+(function(){
+  var wrap=document.querySelector('.carousel-wrap');
+  var track=document.getElementById('revTrack');
+  var dotsWrap=document.getElementById('revDots');
+  if(!track||!wrap)return;
+  var cards=Array.prototype.slice.call(track.querySelectorAll('.rev-card'));
+  var total=cards.length,current=0,timer,gap=20;
+  function getVisible(){return window.innerWidth<640?1:(window.innerWidth<960?2:3);}
+  function setCardSizes(){var vis=getVisible(),wrapW=wrap.offsetWidth,cardW=Math.floor((wrapW-(gap*(vis-1)))/vis);cards.forEach(function(c){c.style.width=cardW+'px';c.style.marginRight=gap+'px';});cards[cards.length-1].style.marginRight='0';}
+  function getSteps(){return total-getVisible()+1;}
+  function buildDots(){dotsWrap.innerHTML='';var steps=getSteps();for(var i=0;i<steps;i++){var d=document.createElement('button');d.className='carousel-dot'+(i===0?' active':'');d.setAttribute('data-i',i);d.addEventListener('click',function(){goTo(+this.getAttribute('data-i'));resetTimer();});dotsWrap.appendChild(d);}}
+  function goTo(idx){var steps=getSteps();current=((idx%steps)+steps)%steps;var cardW=cards[0].offsetWidth+gap;track.style.transform='translateX(-'+(current*cardW)+'px)';dotsWrap.querySelectorAll('.carousel-dot').forEach(function(d,i){d.classList.toggle('active',i===current);});}
+  function next(){goTo(current+1);}
+  function resetTimer(){clearInterval(timer);timer=setInterval(next,3400);}
+  function init(){setCardSizes();buildDots();goTo(0);}
+  setTimeout(init,80);
+  window.addEventListener('resize',function(){setCardSizes();buildDots();goTo(0);});
+  resetTimer();
+  wrap.addEventListener('mouseenter',function(){clearInterval(timer);});
+  wrap.addEventListener('mouseleave',resetTimer);
+  var startX=0;
+  wrap.addEventListener('touchstart',function(e){startX=e.touches[0].clientX;},{passive:true});
+  wrap.addEventListener('touchend',function(e){var diff=startX-e.changedTouches[0].clientX;if(Math.abs(diff)>40){goTo(diff>0?current+1:current-1);resetTimer();}},{passive:true});
+})();
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"The Guys Group","description":"Professional pressure washing Sydney. Driveway cleaning, roof washing, concrete pressure cleaning, pool area washing and water blasting across all Sydney suburbs.","url":"https://theguysgroup.com.au","telephone":"0000000000","address":{"@type":"PostalAddress","addressRegion":"NSW","addressCountry":"AU","addressLocality":"Sydney"},"areaServed":{"@type":"City","name":"Sydney"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"500","bestRating":"5","worstRating":"1"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does pressure washing cost in Sydney?","acceptedAnswer":{"@type":"Answer","text":"Driveway cleaning starts from $199, full exterior cleans from $349 and roof pressure washing from $299. All prices are fixed and confirmed upfront before work begins."}},{"@type":"Question","name":"Do you offer same-day pressure washing in Sydney?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer same-day bookings across all Sydney suburbs subject to availability."}},{"@type":"Question","name":"Is high pressure cleaning safe for all surfaces?","acceptedAnswer":{"@type":"Answer","text":"Yes when done by professionals. We use the correct pressure and technique for each surface type including concrete, pavers, tiles, Colorbond and timber."}},{"@type":"Question","name":"What areas do you service for pressure washing in Sydney?","acceptedAnswer":{"@type":"Answer","text":"We cover the entire Sydney metropolitan area including Parramatta, North Sydney, Eastern Suburbs, Inner West, Hills District, Penrith, Hornsby, Blacktown, Liverpool, Sutherland, Manly and Castle Hill."}}]}</script>
+</body>
+</html>
