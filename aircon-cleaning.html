@@ -43,17 +43,10 @@ a{text-decoration:none;color:inherit}
 .fade-right.visible{opacity:1;transform:none}
 .delay-1{transition-delay:.1s}.delay-2{transition-delay:.2s}.delay-3{transition-delay:.3s}.delay-4{transition-delay:.4s}
 
-/* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:0;transition:background .3s,box-shadow .3s}
-.nav.scrolled{background:rgba(14,14,14,0.97);box-shadow:0 2px 20px rgba(0,0,0,0.6)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
-.nav-logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;letter-spacing:.5px;color:white}
-.nav-logo span{color:var(--red-light)}
-.nav-phone{display:flex;align-items:center;gap:8px;background:var(--red);color:white;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;letter-spacing:.3px;padding:10px 20px;border-radius:var(--radius);transition:background .2s}
-.nav-phone:hover{background:var(--red-dark)}
+
 
 /* HERO */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:80px 0 60px}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:60px 0}
 .hero-bg{position:absolute;inset:0;background-image:url('images/aircon/aircon-cleaning-team-commercial-sydney.jpg');background-size:cover;background-position:center 30%}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(100deg,rgba(0,0,0,0.93) 0%,rgba(0,0,0,0.78) 50%,rgba(0,0,0,0.35) 100%)}
 .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 400px;gap:52px;align-items:center;width:100%}
@@ -334,18 +327,7 @@ a{text-decoration:none;color:inherit}
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="nav" id="mainNav">
-  <div class="container">
-    <div class="nav-inner">
-      <div class="nav-logo">THE GUYS GROUP &mdash; <span>AIRCON CLEANING</span></div>
-      <a href="tel:1300380090" class="nav-phone">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 010 1.19h3a2 2 0 012 1.72 13.1 13.1 0 00.67 2.95 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.19-1.19a2 2 0 012.11-.45 13.1 13.1 0 002.95.67A2 2 0 0122 16.92z"/></svg>
-        1300 380 090
-      </a>
-    </div>
-  </div>
-</nav>
+
 
 <!-- HERO -->
 <section class="hero" id="home">
@@ -886,8 +868,7 @@ a{text-decoration:none;color:inherit}
 </div>
 
 <script>
-// NAV SCROLL
-window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>40);});
+
 
 // SCROLL ANIMATIONS
 var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:.12});
