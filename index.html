@@ -8,7 +8,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
 <style>
 :root{
   --red:#C0392B;--red-dark:#96261F;--red-light:#E74C3C;
@@ -80,8 +79,6 @@ a{text-decoration:none;color:inherit}
 .fr select option{background:var(--mid);color:white}
 .fr textarea{resize:vertical;min-height:60px}
 .fg{display:grid;grid-template-columns:1fr 1fr;gap:11px}
-.recaptcha-wrap{margin:8px 0 4px;display:flex;justify-content:center;transform:scale(0.85);transform-origin:left center}
-.recaptcha-error{color:#E74C3C;font-size:11px;margin-top:3px;display:none;font-weight:600}
 .btn-submit{width:100%;background:var(--red);color:white;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;letter-spacing:.5px;padding:14px;border:none;border-radius:var(--radius);cursor:pointer;margin-top:6px;transition:all .2s}
 .btn-submit:hover{background:var(--red-dark);transform:translateY(-1px)}
 .form-note{text-align:center;font-size:11px;color:var(--muted);margin-top:8px}
@@ -327,7 +324,7 @@ a{text-decoration:none;color:inherit}
           <a href="#quote" class="btn-ghost">Get a Free Quote &#8594;</a>
         </div>
         <div class="hero-stats">
-          <div class="h-stat"><div class="n">500+</div><div class="l">Properties cleaned</div></div>
+          <div class="h-stat"><div class="n">1987+</div><div class="l">Properties cleaned</div></div>
           <div class="h-stat"><div class="n">5.0</div><div class="l">Google rating</div></div>
           <div class="h-stat"><div class="n">Same day</div><div class="l">Bookings available</div></div>
         </div>
@@ -335,32 +332,34 @@ a{text-decoration:none;color:inherit}
       <div class="form-card fade-right" id="quote">
         <div class="form-top">
           <h3>FREE PRESSURE WASHING QUOTE</h3>
-          <p>Fast response &mdash; usually same day</p>
+          <p>We call you back within minutes</p>
         </div>
         <div class="form-body">
+        <form class="elementor-form" method="post" name="Pressure Washing Hero Quote" action="https://theguyservicegroup.com/services/pressure-washing-sydney/">
+          <input type="hidden" name="post_id" value="3412">
+          <input type="hidden" name="form_id" value="4039b7e7">
+          <input type="hidden" name="referer_title" value="Pressure Washing Sydney | The Guys Group">
           <div class="fg">
-            <div class="fr"><label>Name</label><input type="text" placeholder="Your name"></div>
-            <div class="fr"><label>Phone</label><input type="tel" placeholder="04xx xxx xxx"></div>
+            <div class="fr"><label class="elementor-field-label">Name</label><input type="text" name="form_fields[name]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Your name"></div>
+            <div class="fr"><label class="elementor-field-label">Phone</label><input type="tel" name="form_fields[field_4e27362]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="04xx xxx xxx"></div>
           </div>
-          <div class="fr"><label>Email</label><input type="email" placeholder="you@email.com"></div>
-          <div class="fr"><label>Suburb / Postcode</label><input type="text" placeholder="e.g. Parramatta 2150"></div>
-          <div class="fr"><label>Service</label>
-            <select>
-              <option>Driveway Pressure Washing</option>
-              <option>Concrete Pressure Cleaning</option>
-              <option>High Pressure Cleaning</option>
-              <option>Roof Pressure Washing</option>
-              <option>Pool Area Washing</option>
-              <option>Water Blasting</option>
-              <option>Commercial Pressure Washing</option>
-              <option>Other / Not Sure</option>
+          <div class="fr"><label class="elementor-field-label">Email</label><input type="email" name="form_fields[email]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="you@email.com"></div>
+          <div class="fr"><label class="elementor-field-label">Postcode</label><input type="text" name="form_fields[field_b725707]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="e.g. 2150"></div>
+          <div class="fr"><label class="elementor-field-label">Service</label>
+            <select name="form_fields[field_f1e476a]" class="elementor-field elementor-size-sm elementor-field-textual">
+              <option value="">Select a service</option>
+              <option value="Driveway Pressure Washing">Driveway Pressure Washing</option>
+              <option value="Concrete Pressure Cleaning">Concrete Pressure Cleaning</option>
+              <option value="Roof Pressure Washing">Roof Pressure Washing</option>
+              <option value="Pool Area Washing">Pool Area Washing</option>
+              <option value="Water Blasting">Water Blasting</option>
+              <option value="Commercial Pressure Washing">Commercial Pressure Washing</option>
+              <option value="Other / Not Sure">Other / Not Sure</option>
             </select>
           </div>
-          <div class="fr"><label>Message (optional)</label><textarea placeholder="Surface type, size, stubborn stains..."></textarea></div>
-          <div class="recaptcha-wrap"><div class="g-recaptcha"></div></div>
-          <div class="recaptcha-error">Please confirm you are not a robot.</div>
-          <button class="btn-submit" onclick="submitForm(this)" type="button">GET MY FREE QUOTE</button>
+          <button class="btn-submit elementor-button" type="submit">GET MY FREE QUOTE &#8594;</button>
           <p class="form-note">No spam. No obligation. 100% free.</p>
+        </form>
         </div>
       </div>
     </div>
@@ -374,7 +373,7 @@ a{text-decoration:none;color:inherit}
       <div class="tb-item"><span class="tb-check">&#10003;</span> Transparent Fixed Pricing</div>
       <div class="tb-item"><span class="tb-check">&#10003;</span> Residential and Commercial</div>
       <div class="tb-item"><span class="tb-check">&#10003;</span> Fully Insured</div>
-      <div class="tb-item"><span class="tb-check">&#10003;</span> 500+ Properties Cleaned</div>
+      <div class="tb-item"><span class="tb-check">&#10003;</span> 1987+ Properties Cleaned</div>
       <div class="tb-item"><span class="tb-check">&#10003;</span> Same-Day Available</div>
     </div>
   </div>
@@ -448,7 +447,7 @@ a{text-decoration:none;color:inherit}
       <div class="fade-right">
         <div class="why-img-wrap">
           <img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/pressure-washing-technician-setting-up-equipment-sydney.jpg" alt="Pressure washing technician setting up equipment at commercial property Sydney" loading="lazy">
-          <div class="why-badge"><span class="big">500+</span>Sydney Properties<br>Cleaned</div>
+          <div class="why-badge"><span class="big">1987+</span>Sydney Properties<br>Cleaned</div>
         </div>
       </div>
     </div>
@@ -469,7 +468,7 @@ a{text-decoration:none;color:inherit}
         <div class="svc-img"><img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/pressure-washing-kerb-concrete-cleaning-sydney.jpg" alt="Pressure washing concrete kerb cleaning close up Sydney" loading="lazy"><div class="svc-overlay"></div></div>
         <div class="svc-body">
           <h3>Driveway Cleaning Services</h3>
-          <p>We remove oil stains, tyre marks, dirt and mould from concrete, pavers and asphalt. Our driveway washing service restores your entrance to near-new condition.</p>
+          <p>We remove dirt, mould and years of built-up grime from concrete, pavers and asphalt. Our driveway washing service restores your entrance to near-new condition.</p>
           <span class="svc-tag">Most Popular</span>
         </div>
       </div>
@@ -490,7 +489,7 @@ a{text-decoration:none;color:inherit}
         </div>
       </div>
       <div class="svc-tile">
-        <div class="svc-img"><img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/solar-panel-cleaning-rooftop-sydney.jpg" alt="Professional solar panel cleaning rooftop Sydney" loading="lazy"><div class="svc-overlay"></div></div>
+        <div class="svc-img"><img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/pressure-washing-commercial-carpark-wet-concrete-sydney.jpg" alt="Commercial pressure washing carpark and concrete Sydney" loading="lazy"><div class="svc-overlay"></div></div>
         <div class="svc-body">
           <h3>Commercial Pressure Washing</h3>
           <p>We service commercial properties, carparks, warehouses, retail centres and strata buildings. Regular scheduled pressure cleaning available.</p>
@@ -544,7 +543,7 @@ a{text-decoration:none;color:inherit}
           <div class="rev-card">
             <div class="rev-row"><div class="rev-av" style="background:#C0392B">M</div><div><div class="rev-name">Michael T.</div><div class="rev-sub">Parramatta, NSW</div></div></div>
             <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="rev-text">Had our driveway pressure washed and it looks brand new. Fourteen years of oil stains and tyre marks completely gone in a few hours. Absolutely worth it. Will book again for the patio.</p>
+            <p class="rev-text">Had our driveway pressure washed and it looks brand new. Fourteen years of grime and discolouration completely gone in a few hours. Absolutely worth it. Will book again for the patio.</p>
             <div class="rev-date">1 week ago &middot; Driveway Cleaning Sydney</div>
           </div>
           <div class="rev-card">
@@ -616,7 +615,7 @@ a{text-decoration:none;color:inherit}
     </div>
     <div class="ba-stats fade-up delay-2">
       <div class="ba-stat"><div class="n">95%</div><div class="l">Stain removal rate</div></div>
-      <div class="ba-stat"><div class="n">500+</div><div class="l">Sydney properties cleaned</div></div>
+      <div class="ba-stat"><div class="n">1987+</div><div class="l">Sydney properties cleaned</div></div>
       <div class="ba-stat"><div class="n">1 day</div><div class="l">Average job turnaround</div></div>
     </div>
     <div style="text-align:center;margin-top:36px">
@@ -666,7 +665,7 @@ a{text-decoration:none;color:inherit}
         <div class="pc-num">$199</div>
         <ul class="pc-feats">
           <li><span class="pfc">&#10003;</span> Single or double driveway</li>
-          <li><span class="pfc">&#10003;</span> Oil and tyre stain removal</li>
+          <li><span class="pfc">&#10003;</span> Embedded stain removal</li>
           <li><span class="pfc">&#10003;</span> Mould and algae treatment</li>
           <li><span class="pfc">&#10003;</span> Concrete and pavers</li>
           <li><span class="pfc">&#10003;</span> Fixed price, no surprises</li>
@@ -690,7 +689,8 @@ a{text-decoration:none;color:inherit}
       <div class="pc">
         <h3>Roof Pressure Washing</h3>
         <div class="pc-from">Starting from</div>
-        <div class="pc-num">$299</div>
+        <div class="pc-num">$899</div>
+        <p style="color:var(--muted);font-size:13px;margin:-4px 0 10px">Double storey from $1,100</p>
         <ul class="pc-feats">
           <li><span class="pfc">&#10003;</span> Tile and Colorbond roofs</li>
           <li><span class="pfc">&#10003;</span> Lichen and moss removal</li>
@@ -796,7 +796,7 @@ a{text-decoration:none;color:inherit}
     <div class="faq-grid fade-up delay-1">
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">How much does pressure washing cost in Sydney?<span class="faq-icon">+</span></button>
-        <div class="faq-a"><p>Driveway cleaning services start from $199, full exterior cleans from $349 and roof pressure washing from $299. All prices are fixed and confirmed upfront before any work begins. No hidden fees, no surprises.</p></div>
+        <div class="faq-a"><p>Driveway cleaning services start from $199, full exterior cleans from $349 and roof pressure washing from $899 (single storey) or from $1,100 (double storey). All prices are fixed and confirmed upfront before any work begins. No hidden fees, no surprises.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">Do you offer same-day pressure washing in Sydney?<span class="faq-icon">+</span></button>
@@ -828,7 +828,7 @@ a{text-decoration:none;color:inherit}
   <div class="fcta-overlay"></div>
   <div class="container fcta-inner fade-up">
     <h2>READY FOR A CLEANER PROPERTY?</h2>
-    <p>Join 500+ Sydney property owners who trust The Guys Group for professional pressure washing. Fixed pricing, same-day bookings, results guaranteed.</p>
+    <p>Join 1987+ Sydney property owners who trust The Guys Group for professional pressure washing. Fixed pricing, same-day bookings, results guaranteed.</p>
     <div class="fcta-btns">
       <a href="tel:1300380090" class="btn-red">Call 1300 380 090</a>
       <a href="#quote" class="btn-ghost">Get a Quote Online &#8594;</a>
@@ -865,32 +865,35 @@ a{text-decoration:none;color:inherit}
       <div class="ff-card fade-right">
         <div class="ff-band">
           <h3>FREE QUOTE REQUEST</h3>
-          <p>We respond within hours, usually same day.</p>
+          <p>We call you back within minutes.</p>
         </div>
         <div class="ff-body">
+        <form class="elementor-form" method="post" name="Pressure Washing Final Quote" action="https://theguyservicegroup.com/services/pressure-washing-sydney/">
+          <input type="hidden" name="post_id" value="3412">
+          <input type="hidden" name="form_id" value="4039b7e7">
+          <input type="hidden" name="referer_title" value="Pressure Washing Sydney | The Guys Group">
           <div class="fg">
-            <div class="fr"><label>Name</label><input type="text" placeholder="Your name"></div>
-            <div class="fr"><label>Phone</label><input type="tel" placeholder="04xx xxx xxx"></div>
+            <div class="fr"><label class="elementor-field-label">Name</label><input type="text" name="form_fields[name]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Your name"></div>
+            <div class="fr"><label class="elementor-field-label">Phone</label><input type="tel" name="form_fields[field_4e27362]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="04xx xxx xxx"></div>
           </div>
-          <div class="fr"><label>Email</label><input type="email" placeholder="you@email.com"></div>
-          <div class="fr"><label>Postcode</label><input type="text" placeholder="e.g. 2000"></div>
-          <div class="fr"><label>Service</label>
-            <select>
-              <option>Driveway Pressure Washing</option>
-              <option>Concrete Pressure Cleaning</option>
-              <option>Roof Pressure Washing</option>
-              <option>Pool Area Washing</option>
-              <option>Full Exterior Clean</option>
-              <option>Commercial Pressure Washing</option>
-              <option>Water Blasting</option>
-              <option>Other</option>
+          <div class="fr"><label class="elementor-field-label">Email</label><input type="email" name="form_fields[email]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="you@email.com"></div>
+          <div class="fr"><label class="elementor-field-label">Postcode</label><input type="text" name="form_fields[field_b725707]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="e.g. 2000"></div>
+          <div class="fr"><label class="elementor-field-label">Service</label>
+            <select name="form_fields[field_f1e476a]" class="elementor-field elementor-size-sm elementor-field-textual">
+              <option value="">Select a service</option>
+              <option value="Driveway Pressure Washing">Driveway Pressure Washing</option>
+              <option value="Concrete Pressure Cleaning">Concrete Pressure Cleaning</option>
+              <option value="Roof Pressure Washing">Roof Pressure Washing</option>
+              <option value="Pool Area Washing">Pool Area Washing</option>
+              <option value="Full Exterior Clean">Full Exterior Clean</option>
+              <option value="Commercial Pressure Washing">Commercial Pressure Washing</option>
+              <option value="Water Blasting">Water Blasting</option>
+              <option value="Other">Other</option>
             </select>
           </div>
-          <div class="fr"><label>Message</label><textarea placeholder="Surface type, size, any stubborn stains..."></textarea></div>
-          <div class="recaptcha-wrap"><div class="g-recaptcha"></div></div>
-          <div class="recaptcha-error">Please confirm you are not a robot.</div>
-          <button class="btn-submit" onclick="submitForm(this)" type="button">SEND MY FREE QUOTE REQUEST</button>
+          <button class="btn-submit elementor-button" type="submit">SEND MY FREE QUOTE REQUEST &#8594;</button>
           <p class="form-note">100% free. No spam. No obligation.</p>
+        </form>
         </div>
       </div>
     </div>
@@ -908,10 +911,7 @@ a{text-decoration:none;color:inherit}
 // FAQ
 function toggleFaq(btn){var item=btn.parentElement;var ans=item.querySelector('.faq-a');document.querySelectorAll('.faq-item').forEach(function(i){if(i!==item){i.querySelector('.faq-q').classList.remove('open');i.querySelector('.faq-a').classList.remove('open');}});btn.classList.toggle('open');ans.classList.toggle('open');}
 
-// reCAPTCHA
-var recaptchaWidgets=[];
-function onRecaptchaLoad(){document.querySelectorAll('.g-recaptcha').forEach(function(el){var id=grecaptcha.render(el,{sitekey:'6LfsYBQtAAAAENaSc8RXEu78LsxCT7iUtkep-K8'});el.setAttribute('data-widget-id',id);recaptchaWidgets.push(id);});}
-function submitForm(btn){var p=btn;for(var i=0;i<6;i++){p=p.parentElement;if(!p)break;var rc=p.querySelector('.g-recaptcha');if(rc)break;}var rcEl=p?p.querySelector('.g-recaptcha'):null;var errEl=p?p.querySelector('.recaptcha-error'):null;var wid=rcEl?rcEl.getAttribute('data-widget-id'):null;var resp=wid!==null?grecaptcha.getResponse(parseInt(wid)):grecaptcha.getResponse();if(!resp||resp.length===0){if(errEl)errEl.style.display='block';return;}if(errEl)errEl.style.display='none';window.location.href='https://theguyservicegroup.com/thank-you';}
+function submitForm(btn){window.location.href='https://theguyservicegroup.com/thank-you';}
 
 // CAROUSEL
 (function(){
@@ -955,6 +955,6 @@ function submitForm(btn){var p=btn;for(var i=0;i<6;i++){p=p.parentElement;if(!p)
 })();
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"The Guys Group","description":"Professional pressure washing Sydney. Driveway cleaning, concrete pressure cleaning, roof washing, pool area and commercial pressure washing.","telephone":"1300 380 090","address":{"@type":"PostalAddress","addressRegion":"NSW","addressCountry":"AU","addressLocality":"Sydney"},"areaServed":{"@type":"City","name":"Sydney"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"500","bestRating":"5","worstRating":"1"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"The Guys Group","description":"Professional pressure washing Sydney. Driveway cleaning, concrete pressure cleaning, roof washing, pool area and commercial pressure washing.","telephone":"1300 380 090","address":{"@type":"PostalAddress","addressRegion":"NSW","addressCountry":"AU","addressLocality":"Sydney"},"areaServed":{"@type":"City","name":"Sydney"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"1987","bestRating":"5","worstRating":"1"}}</script>
 </body>
 </html>
