@@ -7,7 +7,6 @@
 <meta name="description" content="Professional air conditioner cleaning Sydney. Split system, ducted & commercial AC deep clean. Mould removal, coil clean, sanitise. Same-day bookings. Call 1300 380 090.">
 <link rel="canonical" href="https://theguyservicegroup.com/aircon-cleaning">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
 <style>
 :root{
   --red:#C0392B;--red-dark:#96261F;--red-light:#E74C3C;
@@ -81,8 +80,6 @@ a{text-decoration:none;color:inherit}
 .fr select option{background:var(--mid);color:white}
 .fr textarea{resize:vertical;min-height:60px}
 .fg{display:grid;grid-template-columns:1fr 1fr;gap:11px}
-.recaptcha-wrap{margin:8px 0 4px;display:flex;justify-content:center;transform:scale(0.85);transform-origin:left center}
-.recaptcha-error{color:#E74C3C;font-size:11px;margin-top:3px;display:none;font-weight:600}
 .btn-submit{width:100%;background:var(--red);color:white;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;letter-spacing:.5px;padding:14px;border:none;border-radius:var(--radius);cursor:pointer;margin-top:6px;transition:all .2s}
 .btn-submit:hover{background:var(--red-dark);transform:translateY(-1px)}
 .form-note{text-align:center;font-size:11px;color:var(--muted);margin-top:8px}
@@ -317,7 +314,6 @@ a{text-decoration:none;color:inherit}
   .section{padding:52px 0}
   .why-img-wrap img{height:280px}
   .proc-img img{height:220px}
-  .recaptcha-wrap{transform:scale(0.75);transform-origin:left center}
   .urgency-tag{font-size:12px;padding:6px 14px}
   .rev-btns{flex-direction:column;align-items:center}
   .fcta{padding:72px 0}
@@ -385,7 +381,7 @@ a{text-decoration:none;color:inherit}
           </a>
         </div>
         <div class="hero-stats">
-          <div class="h-stat"><div class="n">500+</div><div class="l">Units cleaned</div></div>
+          <div class="h-stat"><div class="n">1987+</div><div class="l">Units cleaned</div></div>
           <div class="h-stat"><div class="n">5.0</div><div class="l">Google rating</div></div>
           <div class="h-stat"><div class="n">Same day</div><div class="l">Bookings available</div></div>
         </div>
@@ -393,7 +389,7 @@ a{text-decoration:none;color:inherit}
       <div class="form-card fade-right" id="quote">
         <div class="form-top">
           <h3>FREE AIRCON CLEANING QUOTE</h3>
-          <p>Fast response. Usually same day.</p>
+          <p>We call you back within minutes.</p>
         </div>
         <div class="form-body"><form class="elementor-form" method="post" name="Aircon Cleaning Quote" action="https://theguyservicegroup.com/services/pressure-washing-sydney/" aria-label="Book My Aircon Clean">
   <input type="hidden" name="post_id" value="3412">
@@ -504,7 +500,7 @@ a{text-decoration:none;color:inherit}
       <div class="fade-right">
         <div class="why-img-wrap">
           <img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/aircon/aircon-cleaning-technician-split-system-flush-sydney.jpg" alt="The Guys Group aircon cleaning technician flushing split system unit with containment cover Sydney" loading="lazy">
-          <div class="why-badge"><span class="big">5.0&#9733;</span>Google Rated<br>500+ cleans</div>
+          <div class="why-badge"><span class="big">5.0&#9733;</span>Google Rated<br>1987+ cleans</div>
         </div>
       </div>
     </div>
@@ -957,10 +953,7 @@ document.querySelectorAll('.fade-up,.fade-left,.fade-right').forEach(function(el
 // FAQ
 function toggleFaq(btn){var item=btn.parentElement;var ans=item.querySelector('.faq-a');document.querySelectorAll('.faq-item').forEach(function(i){if(i!==item){i.querySelector('.faq-q').classList.remove('open');i.querySelector('.faq-a').classList.remove('open');}});btn.classList.toggle('open');ans.classList.toggle('open');}
 
-// reCAPTCHA
-var recaptchaWidgets=[];
-function onRecaptchaLoad(){document.querySelectorAll('.g-recaptcha').forEach(function(el){var id=grecaptcha.render(el,{sitekey:'6LfsYBQtAAAAENaSc8RXEu78LsxCT7iUtkep-K8'});el.setAttribute('data-widget-id',id);recaptchaWidgets.push(id);});}
-function submitForm(btn){var p=btn;for(var i=0;i<6;i++){p=p.parentElement;if(!p)break;var rc=p.querySelector('.g-recaptcha');if(rc)break;}var rcEl=p?p.querySelector('.g-recaptcha'):null;var errEl=p?p.querySelector('.recaptcha-error'):null;var wid=rcEl?rcEl.getAttribute('data-widget-id'):null;var resp=wid!==null?grecaptcha.getResponse(parseInt(wid)):grecaptcha.getResponse();if(!resp||resp.length===0){if(errEl)errEl.style.display='block';return;}if(errEl)errEl.style.display='none';window.location.href='https://theguyservicegroup.com/thank-you';}
+function submitForm(btn){window.location.href='https://theguyservicegroup.com/thank-you';}
 
 // CAROUSEL
 (function(){
