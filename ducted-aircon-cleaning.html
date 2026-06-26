@@ -195,6 +195,29 @@ a{text-decoration:none;color:inherit}
   .float-btn{font-size:14px;padding:12px 18px}
 }
   a.btn-red,a.btn-ghost,button.btn-red,button.btn-ghost,.btn-red,.btn-ghost{color:#ffffff !important}
+
+/* ── BEFORE / AFTER ── */
+.ba-hdr{text-align:center;margin-bottom:40px}
+.ba-split{display:grid;grid-template-columns:1fr 1fr;gap:12px;border-radius:16px;overflow:hidden}
+.ba-side{position:relative}
+.ba-side img{width:100%;height:380px;object-fit:cover;display:block}
+.ba-badge{position:absolute;bottom:16px;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:800;padding:6px 16px;border-radius:6px;letter-spacing:.5px}
+.ba-badge.before{left:16px;background:rgba(0,0,0,0.75);color:#fff}
+.ba-badge.after{right:16px;background:#27AE60;color:#fff}
+.ba-stats{display:flex;justify-content:center;gap:48px;margin-top:40px;flex-wrap:wrap;text-align:center}
+.ba-stat .n{font-family:'Barlow Condensed',sans-serif;font-size:42px;font-weight:900;color:var(--red);line-height:1}
+.ba-stat .l{font-size:14px;color:var(--white);margin-top:4px}
+@media(max-width:640px){.ba-split{grid-template-columns:1fr}.ba-side img{height:220px}.ba-stats{gap:28px}}
+
+/* ── GALLERY ── */
+.gallery-hdr{text-align:center;margin-bottom:36px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:230px;gap:10px;border-radius:16px;overflow:hidden}
+.gi{overflow:hidden;border-radius:8px}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gi:hover img{transform:scale(1.04)}
+.gi.wide{grid-column:span 2}
+.gi.tall{grid-row:span 2}
+@media(max-width:640px){.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gi.wide{grid-column:span 2}.gi.tall{grid-row:span 1}}
 </style>
 </head>
 <body>
@@ -405,6 +428,52 @@ a{text-decoration:none;color:inherit}
         <h3>Expensive Breakdowns</h3>
         <p>Dust and debris accelerate wear on compressors, fans and motors. Annual professional cleaning is the most cost-effective way to extend the life of your system.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="section section-mid">
+  <div class="container">
+    <div class="ba-hdr fade-up">
+      <div class="red-bar" style="margin:0 auto 18px"></div>
+      <p class="eyebrow">The Results Speak for Themselves</p>
+      <h2 class="heading">Before &amp; After Every Ducted Deep Clean</h2>
+      <p class="subtext" style="max-width:480px;margin:0 auto">Real duct system photos from jobs across Sydney. Clogged coils, blocked vents and mould — all eliminated in one visit.</p>
+    </div>
+    <div class="ba-split fade-up delay-1">
+      <div class="ba-side">
+        <img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/ducted/ducted-aircon-coil-dust-buildup-before-cleaning-sydney.jpg" alt="Ducted air conditioning coil access panel packed with thick dust and debris before professional deep clean Sydney" loading="lazy">
+        <div class="ba-badge before">&#8592; Before</div>
+      </div>
+      <div class="ba-side">
+        <img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/ducted/ducted-aircon-vent-grille-clean-after-professional-service-sydney.jpg" alt="Ducted aircon vent grille fully restored and clean after The Guys Group professional service Sydney" loading="lazy">
+        <div class="ba-badge after">After &#8594;</div>
+      </div>
+    </div>
+    <div class="ba-stats fade-up delay-2">
+      <div class="ba-stat"><div class="n">100%</div><div class="l">Mould eliminated</div></div>
+      <div class="ba-stat"><div class="n">Up to 30%</div><div class="l">Efficiency restored</div></div>
+      <div class="ba-stat"><div class="n">Zero</div><div class="l">Mess left behind</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="gallery-hdr fade-up">
+      <div class="red-bar" style="margin:0 auto 18px"></div>
+      <p class="eyebrow">Recent Jobs</p>
+      <h2 class="heading">Ducted Aircon Cleaning Jobs Across Sydney</h2>
+    </div>
+    <div class="gallery-grid fade-up delay-1">
+      <div class="gi wide"><img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/aircon/aircon-cleaning-guys-team-duct-system-commercial-sydney.jpg" alt="The Guys Group team servicing a commercial ducted air conditioning system Sydney" loading="lazy"></div>
+      <div class="gi tall"><img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/ducted/ducted-aircon-technicians-vacuuming-duct-access-sydney.jpg" alt="Two Guys Group technicians vacuuming inside ducted air conditioning ceiling access panel Sydney" loading="lazy"></div>
+      <div class="gi"><img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/aircon/aircon-filter-before-after-dust-buildup-comparison-sydney.jpg" alt="Ducted system filter showing heavy dust buildup before and after professional cleaning Sydney" loading="lazy"></div>
+      <div class="gi"><img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/ducted/ducted-aircon-technician-industrial-vacuum-duct-clean-sydney.jpg" alt="Guys Group technician operating industrial HECON vacuum during ducted aircon duct cleaning Sydney" loading="lazy"></div>
+      <div class="gi"><img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/ducted/ducted-aircon-coil-dust-buildup-before-cleaning-sydney.jpg" alt="Heavily dust clogged ducted air conditioning coil access panel before cleaning Sydney" loading="lazy"></div>
+      <div class="gi"><img src="https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/ducted/ducted-aircon-vent-grille-clean-after-professional-service-sydney.jpg" alt="Clean ducted aircon ceiling vent grille after Guys Group professional service Sydney" loading="lazy"></div>
     </div>
   </div>
 </section>
