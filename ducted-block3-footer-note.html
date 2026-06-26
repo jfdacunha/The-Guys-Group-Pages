@@ -1,0 +1,328 @@
+<!-- PASTE INTO ELEMENTOR HTML WIDGET — Final CTA form + float button -->
+<!-- WordPress theme handles the main footer -->
+
+<style>
+:root{
+  --red:#C0392B;--red-dark:#96261F;--red-light:#E74C3C;
+  --dark:#0E0E0E;--dark2:#161616;--dark3:#1E1E1E;--mid:#2A2A2A;
+  --border:#303030;--white:#FFFFFF;--muted:#BBBBBB;--green:#27AE60;
+  --shadow:0 4px 24px rgba(0,0,0,0.5);--shadow-lg:0 16px 56px rgba(0,0,0,0.6);
+  --radius:10px;--radius-lg:16px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;color:var(--white);background:var(--dark);overflow-x:hidden;max-width:100vw}
+h1,h2,h3,h4{font-family:'Barlow Condensed',sans-serif;line-height:1.05;color:var(--white);letter-spacing:.5px}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:100%;max-width:1160px;margin:0 auto;padding:0 24px;box-sizing:border-box}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--red-light);margin-bottom:10px;font-family:'Inter',sans-serif}
+.heading{font-size:clamp(22px,3vw,40px);font-weight:800;margin-bottom:16px}
+.subtext{font-size:17px;color:var(--white);line-height:1.7}
+.section{padding:80px 0;overflow-x:hidden}
+.section-dark{background:var(--dark2);overflow-x:hidden}
+.section-mid{background:var(--dark3);overflow-x:hidden}
+.red-bar{width:48px;height:4px;background:var(--red);margin-bottom:18px;border-radius:2px}
+.fade-up{opacity:0;transform:translateY(32px);transition:opacity .65s ease,transform .65s ease}
+.fade-up.visible{opacity:1;transform:none}
+.delay-1{transition-delay:.1s}.delay-2{transition-delay:.2s}.delay-3{transition-delay:.3s}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:60px 0;width:100%}
+.hero-bg{position:absolute;inset:0;background-image:url('https://raw.githubusercontent.com/jfdacunha/The-Guys-Group-Pages/main/images/aircon/aircon-cleaning-guys-team-duct-system-commercial-sydney.jpg');background-size:cover;background-position:center 40%}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(100deg,rgba(0,0,0,0.94) 0%,rgba(0,0,0,0.78) 55%,rgba(0,0,0,0.35) 100%)}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 400px;gap:52px;align-items:center;width:100%}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(192,57,43,0.5);color:#FF8070;font-size:11px;font-weight:700;padding:6px 14px;border-radius:50px;margin-bottom:20px;letter-spacing:1.5px;text-transform:uppercase;font-family:'Inter',sans-serif;background:rgba(192,57,43,0.12)}
+.live-dot{width:7px;height:7px;background:#E74C3C;border-radius:50%;animation:pulse 1.8s infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
+.hero h1{font-size:clamp(34px,5vw,64px);font-weight:900;color:white;line-height:.95;text-transform:uppercase;margin-bottom:6px}
+.hero h1 .red{color:var(--red-light)}
+.hero-sub{font-size:15px;color:rgba(255,255,255,0.88);margin-bottom:28px;max-width:520px;line-height:1.7;margin-top:14px}
+.hero-compare{background:rgba(192,57,43,0.15);border:1px solid rgba(192,57,43,0.35);border-radius:var(--radius);padding:14px 18px;margin-bottom:28px;font-size:14px;color:rgba(255,255,255,0.9);max-width:480px;line-height:1.7}
+.hero-compare strong{color:var(--red-light)}
+.hero-pills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.pill{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);border-radius:50px;padding:8px 16px;color:var(--white);font-size:14px;font-weight:500}
+.pill-tick{color:#27AE60;font-weight:800;font-size:15px}
+.btn-red{display:inline-flex;align-items:center;gap:9px;background:var(--red);color:#ffffff !important;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;letter-spacing:.5px;padding:14px 28px;border-radius:var(--radius);transition:all .2s;box-shadow:0 4px 20px rgba(192,57,43,0.45)}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-2px)}
+.btn-ghost{display:inline-flex;align-items:center;gap:9px;background:transparent;border:2px solid rgba(255,255,255,0.35);color:white;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;letter-spacing:.5px;padding:12px 24px;border-radius:var(--radius);transition:all .2s}
+.btn-ghost:hover{border-color:white;background:rgba(255,255,255,0.1)}
+.hero-btns{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:36px}
+.hero-stats{display:flex;gap:32px;flex-wrap:wrap}
+.h-stat .n{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:34px;color:var(--red-light);line-height:1}
+.h-stat .l{font-size:13px;color:rgba(255,255,255,0.7);margin-top:3px}
+
+/* FORM */
+.form-card{background:var(--dark2);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg)}
+.form-top{background:var(--red);padding:18px 24px;text-align:center}
+.form-top h3{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:white;margin:0;letter-spacing:.5px}
+.form-top p{font-size:13px;color:rgba(255,255,255,0.88);margin-top:4px}
+.form-body{padding:20px 24px 26px}
+.elementor-form .elementor-field-label{display:block;font-size:11px;font-weight:600;color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:.8px}
+.elementor-form .elementor-field-group{margin-bottom:11px}
+.elementor-form .elementor-field-textual,.elementor-form textarea,.elementor-form select{width:100%;background:var(--mid);border:1px solid var(--border);border-radius:8px;padding:11px 14px;font-family:'Inter',sans-serif;font-size:14px;color:var(--white);outline:none;transition:border-color .2s;box-sizing:border-box}
+.elementor-form .elementor-field-textual:focus,.elementor-form select:focus{border-color:var(--red-light)}
+.elementor-form select option{background:var(--mid);color:white}
+.form-note{text-align:center;font-size:11px;color:var(--muted);margin-top:8px}
+
+/* TRUST BAR */
+.trust-bar{background:var(--red);padding:14px 0;overflow-x:hidden}
+.trust-bar-inner{display:flex;align-items:center;justify-content:center;gap:36px;flex-wrap:wrap}
+.tb-item{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.95);font-size:14px;font-weight:600}
+.tb-check{font-weight:800;font-size:16px}
+
+/* PRICE FEATURE */
+.price-feature{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border-radius:var(--radius-lg);overflow:hidden;max-width:780px;margin:0 auto}
+.pf-side{background:var(--dark2);padding:36px 32px}
+.pf-side.feat{background:var(--red)}
+.pf-side h3{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:white;margin-bottom:6px}
+.pf-price{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:64px;color:white;line-height:1;margin-bottom:6px}
+.pf-sub{font-size:14px;color:rgba(255,255,255,0.75);margin-bottom:22px}
+.pf-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.pf-list li{display:flex;align-items:flex-start;gap:10px;font-size:15px;color:rgba(255,255,255,0.92)}
+.pfc-tick{color:#27AE60;font-weight:800;font-size:16px;flex-shrink:0}
+.pf-side.feat .pfc-tick{color:rgba(255,255,255,0.95)}
+.vs-badge{display:flex;align-items:center;justify-content:center;background:var(--mid);border-left:1px solid var(--border);border-right:1px solid var(--border);padding:0 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;color:var(--muted)}
+
+/* INCLUDES GRID */
+.includes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-top:48px}
+.inc-tile{background:var(--dark2);padding:28px 24px}
+.inc-icon{width:44px;height:44px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;background:rgba(192,57,43,0.12);border-radius:10px;padding:6px;flex-shrink:0}
+.inc-tile h3{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:800;color:white;margin-bottom:8px}
+.inc-tile p{font-size:14px;color:var(--white);line-height:1.65}
+
+/* WHY MATTERS */
+.matters-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.m-card{background:var(--dark2);border:1px solid var(--border);border-radius:var(--radius);padding:26px 22px;border-top:3px solid var(--red)}
+.m-card h3{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:800;color:white;margin-bottom:10px}
+.m-card p{font-size:15px;color:var(--white);line-height:1.65}
+
+/* REVIEWS */
+.carousel-outer{position:relative;padding:0 52px}
+.carousel-wrap{overflow:hidden}
+.carousel-track{display:flex;transition:transform .75s cubic-bezier(.25,.46,.45,.94);will-change:transform}
+.rev-card{background:var(--dark3);border:1px solid var(--border);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:14px;flex-shrink:0;box-sizing:border-box}
+.rev-row{display:flex;align-items:center;gap:12px}
+.rev-av{width:46px;height:46px;border-radius:50%;color:white;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;flex-shrink:0}
+.rev-name{font-weight:700;font-size:16px;color:white}
+.rev-sub{font-size:13px;color:var(--muted)}
+.rev-stars{color:#F39C12;font-size:16px;letter-spacing:2px}
+.rev-text{font-size:15px;color:var(--white);line-height:1.7;flex:1}
+.rev-date{font-size:12px;color:#666}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:10;width:44px;height:44px;border-radius:50%;background:var(--red);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);transition:all .2s;color:white}
+.carousel-arrow:hover{background:var(--red-dark);transform:translateY(-50%) scale(1.1)}
+.carousel-arrow.prev{left:0}.carousel-arrow.next{right:0}
+.carousel-arrow svg{width:18px;height:18px;stroke:white;fill:none;stroke-width:2.5}
+.carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:24px}
+.carousel-dot{width:8px;height:8px;border-radius:50%;background:#333;border:none;cursor:pointer;transition:all .3s;padding:0}
+.carousel-dot.active{background:var(--red);width:28px;border-radius:4px}
+
+/* PROCESS */
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.proc-grid::before{content:"";position:absolute;top:28px;left:12.5%;right:12.5%;height:1px;background:var(--border);z-index:0}
+.proc-step{text-align:center;padding:0 14px;position:relative;z-index:1}
+.proc-num{width:56px;height:56px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:white;margin:0 auto 18px;box-shadow:0 4px 16px rgba(192,57,43,0.45)}
+.proc-step:nth-child(4) .proc-num{background:var(--green)}
+.proc-step h3{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:800;color:white;margin-bottom:8px}
+.proc-step p{font-size:14px;color:var(--white);line-height:1.6}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-top:48px}
+.faq-item{background:var(--dark2)}
+.faq-q{width:100%;background:none;border:none;padding:20px 24px;text-align:left;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;letter-spacing:.3px;color:white;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;transition:background .2s}
+.faq-q:hover{background:var(--mid)}
+.faq-icon{width:24px;height:24px;border-radius:50%;background:var(--red);color:white;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;flex-shrink:0;transition:transform .3s}
+.faq-q.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a.open{max-height:300px}
+.faq-a p{padding:0 24px 20px;font-size:15px;color:var(--white);line-height:1.75}
+
+/* FINAL FORM */
+.ff-grid{display:grid;grid-template-columns:1fr 420px;gap:60px;align-items:start}
+.ff-copy h2{font-size:clamp(28px,3.5vw,48px);font-weight:900;margin-bottom:14px;text-transform:uppercase}
+.ff-copy p{font-size:16px;color:var(--white);margin-bottom:22px;line-height:1.7}
+.perks{list-style:none;display:flex;flex-direction:column;gap:11px}
+.perks li{display:flex;align-items:center;gap:10px;font-size:16px;color:var(--white)}
+.pck{color:var(--green);font-size:18px;font-weight:800}
+.ff-card{background:var(--dark2);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg)}
+.ff-band{background:var(--red);padding:18px 24px;text-align:center}
+.ff-band h3{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:white;margin:0;letter-spacing:.3px}
+.ff-band p{font-size:13px;color:rgba(255,255,255,0.88);margin-top:3px}
+.ff-body{padding:22px 24px 26px}
+
+/* FLOAT */
+.float-cta{position:fixed;bottom:24px;right:24px;z-index:900;animation:slideup .7s ease-out}
+.float-btn{display:flex;align-items:center;gap:10px;background:var(--red);color:#ffffff !important;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;letter-spacing:.3px;padding:14px 22px;border-radius:var(--radius);box-shadow:0 6px 28px rgba(192,57,43,0.55);transition:all .2s}
+.float-btn:hover{background:var(--red-dark);transform:translateY(-2px)}
+@keyframes slideup{0%{transform:translateY(80px);opacity:0}100%{transform:translateY(0);opacity:1}}
+
+/* MOBILE */
+@media(max-width:960px){
+  .hero-inner,.ff-grid{grid-template-columns:1fr;gap:36px}
+  .hero{min-height:auto;padding:80px 0 60px}
+  .price-feature{grid-template-columns:1fr}
+  .vs-badge{display:none}
+  .includes-grid,.matters-grid{grid-template-columns:1fr 1fr}
+  .proc-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .proc-grid::before{display:none}
+  .faq-grid{grid-template-columns:1fr}
+  .carousel-outer{padding:0 44px}
+  .section{padding:56px 0}
+}
+@media(max-width:640px){
+  html,body{overflow-x:hidden;max-width:100vw}
+  *{max-width:100%}
+  .hero h1{font-size:36px}
+  .fg,.ff-grid{grid-template-columns:1fr}
+  .rev-btns{flex-direction:column;align-items:center}
+  .section{padding:44px 0}
+  .includes-grid,.matters-grid,.proc-grid{grid-template-columns:1fr}
+  .btn-red,.btn-ghost{width:100%;justify-content:center;font-size:16px}
+  .hero-btns{flex-direction:column}
+  .trust-bar-inner{gap:12px}
+  .tb-item{font-size:13px}
+  .carousel-outer{padding:0 36px}
+  .pf-side{padding:26px 20px}
+  .pf-price{font-size:52px}
+  .section{padding:44px 0}
+  .ff-grid{grid-template-columns:1fr}
+  .float-btn{font-size:14px;padding:12px 18px}
+}
+  a.btn-red,a.btn-ghost,button.btn-red,button.btn-ghost,.btn-red,.btn-ghost{color:#ffffff !important}
+
+
+/* MAP */
+.map-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.map-points{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;margin-top:20px}
+.map-point{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--white)}
+.map-dot{width:8px;height:8px;border-radius:50%;background:var(--red);flex-shrink:0}
+.map-circle{width:100%;max-width:440px;height:440px;border-radius:50%;overflow:hidden;border:3px solid var(--border)}
+.map-circle iframe{width:100%;height:100%;min-height:440px;border:none;display:block}
+@media(max-width:860px){.map-layout{grid-template-columns:1fr}.map-circle{border-radius:14px;aspect-ratio:16/9;max-width:100%}}
+
+/* ── BEFORE / AFTER ── */
+.ba-hdr{text-align:center;margin-bottom:40px}
+.ba-split{display:grid;grid-template-columns:1fr 1fr;gap:12px;border-radius:16px;overflow:hidden}
+.ba-side{position:relative}
+.ba-side img{width:100%;height:380px;object-fit:cover;display:block}
+.ba-badge{position:absolute;bottom:16px;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:800;padding:6px 16px;border-radius:6px;letter-spacing:.5px}
+.ba-badge.before{left:16px;background:rgba(0,0,0,0.75);color:#fff}
+.ba-badge.after{right:16px;background:#27AE60;color:#fff}
+.ba-stats{display:flex;justify-content:center;gap:48px;margin-top:40px;flex-wrap:wrap;text-align:center}
+.ba-stat .n{font-family:'Barlow Condensed',sans-serif;font-size:42px;font-weight:900;color:var(--red);line-height:1}
+.ba-stat .l{font-size:14px;color:var(--white);margin-top:4px}
+@media(max-width:640px){.ba-split{grid-template-columns:1fr}.ba-side img{height:220px}.ba-stats{gap:28px}}
+
+/* ── GALLERY ── */
+.gallery-hdr{text-align:center;margin-bottom:36px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:230px;gap:10px;border-radius:16px;overflow:hidden}
+.gi{overflow:hidden;border-radius:8px}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gi:hover img{transform:scale(1.04)}
+.gi.wide{grid-column:span 2}
+.gi.tall{grid-row:span 2}
+@media(max-width:640px){.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gi.wide{grid-column:span 2}.gi.tall{grid-row:span 1}}
+</style>
+
+<!-- FINAL FORM -->
+<section class="section section-dark" id="contact">
+  <div class="container">
+    <div class="ff-grid">
+      <div class="ff-copy fade-up">
+        <div class="red-bar"></div>
+        <p class="eyebrow">Book My Ducted Clean</p>
+        <h2>$349 COMPLETE.<br>BOOK IN 60 SECONDS.</h2>
+        <p>Fill in the form and we will confirm your booking, usually within the hour. Flat $349 for the whole system, no surprises.</p>
+        <ul class="perks">
+          <li><span class="pck">&#10003;</span> $349 flat, whole ducted system</li>
+          <li><span class="pck">&#10003;</span> New filter supplied and fitted</li>
+          <li><span class="pck">&#10003;</span> Hospital-grade sanitise included</li>
+          <li><span class="pck">&#10003;</span> Same day bookings available</li>
+          <li><span class="pck">&#10003;</span> All Sydney suburbs covered</li>
+        </ul>
+      </div>
+      <div class="ff-card fade-up delay-1">
+        <div class="ff-band">
+          <h3>BOOK MY DUCTED CLEAN</h3>
+          <p>Confirmed within the hour</p>
+        </div>
+        <div class="ff-body">
+          <form class="elementor-form" method="post" name="Ducted Aircon Cleaning Final Form" action="https://theguyservicegroup.com/services/pressure-washing-sydney/" aria-label="Book My Ducted Clean">
+            <input type="hidden" name="post_id" value="3412">
+            <input type="hidden" name="form_id" value="4039b7e7">
+            <input type="hidden" name="referer_title" value="Ducted Aircon Cleaning Sydney | The Guys Group">
+            <input type="hidden" name="queried_id" value="3412">
+            <div class="elementor-form-fields-wrapper elementor-labels-above">
+              <div class="elementor-field-group elementor-col-100 elementor-field-required">
+                <label class="elementor-field-label">Name</label>
+                <input type="text" name="form_fields[name]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Your name" required>
+              </div>
+              <div class="elementor-field-group elementor-col-100 elementor-field-required">
+                <label class="elementor-field-label">Phone</label>
+                <input type="tel" name="form_fields[field_4e27362]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="04xx xxx xxx" required>
+              </div>
+              <div class="elementor-field-group elementor-col-100 elementor-field-required">
+                <label class="elementor-field-label">Postcode</label>
+                <input type="text" name="form_fields[field_b725707]" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="e.g. 2150" required>
+              </div>
+              <div class="elementor-field-group elementor-col-100">
+                <label class="elementor-field-label">System Size (approx.)</label>
+                <select name="form_fields[field_f1e476a]" class="elementor-field elementor-size-sm elementor-field-textual">
+                  <option value="">Select approx. size</option>
+                  <option value="Small (up to 6 vents)">Small, up to 6 vents</option>
+                  <option value="Medium (7-12 vents)">Medium, 7 to 12 vents</option>
+                  <option value="Large (13+ vents)">Large, 13 or more vents</option>
+                  <option value="Not sure">Not sure</option>
+                </select>
+              </div>
+              <div class="elementor-field-group elementor-col-100 e-form__buttons">
+                <button type="submit" style="width:100%;background:var(--red);color:#ffffff !important;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;letter-spacing:.5px;padding:16px;border:none;border-radius:var(--radius);cursor:pointer;margin-top:6px;">
+                  BOOK MY DUCTED CLEAN &#8594;
+                </button>
+              </div>
+            </div>
+          </form>
+          <p class="form-note">&#128274; 100% private. No spam ever.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOAT -->
+<div class="float-cta">
+  <a href="#contact" class="float-btn">Book My Ducted Clean &#8594;</a>
+</div>
+
+<script>
+// SCROLL ANIMATIONS
+var obs=new IntersectionObserver(function(e){e.forEach(function(el){if(el.isIntersecting){el.target.classList.add('visible');obs.unobserve(el.target);}});},{threshold:.12});
+document.querySelectorAll('.fade-up').forEach(function(el){obs.observe(el);});
+
+// FAQ
+function ductedToggleFaq(btn){var item=btn.parentElement;var ans=item.querySelector('.faq-a');document.querySelectorAll('.ducted-page .faq-item, .faq-item').forEach(function(i){if(i!==item){i.querySelector('.faq-q').classList.remove('open');i.querySelector('.faq-a').classList.remove('open');}});btn.classList.toggle('open');ans.classList.toggle('open');}
+
+// CAROUSEL
+(function(){
+  var wrap=document.querySelector('.carousel-wrap');
+  var track=document.getElementById('ductedRevTrack');
+  var dotsWrap=document.getElementById('ductedRevDots');
+  if(!track||!wrap)return;
+  var cards=Array.prototype.slice.call(track.querySelectorAll('.rev-card'));
+  var total=cards.length,current=0,timer,gap=20;
+  function getVisible(){return window.innerWidth<640?1:(window.innerWidth<960?2:3);}
+  function setCardSizes(){var vis=getVisible(),wrapW=wrap.offsetWidth,cardW=Math.floor((wrapW-(gap*(vis-1)))/vis);cards.forEach(function(c){c.style.width=cardW+'px';c.style.marginRight=gap+'px';});cards[cards.length-1].style.marginRight='0';}
+  function getSteps(){return Math.max(1,total-getVisible()+1);}
+  function buildDots(){dotsWrap.innerHTML='';var steps=getSteps();for(var i=0;i<steps;i++){var d=document.createElement('button');d.className='carousel-dot'+(i===0?' active':'');d.setAttribute('data-i',i);d.addEventListener('click',function(){goTo(+this.getAttribute('data-i'));resetTimer();});dotsWrap.appendChild(d);}}
+  function goTo(idx){var steps=getSteps();current=((idx%steps)+steps)%steps;var cardW=cards[0].offsetWidth+gap;track.style.transform='translateX(-'+(current*cardW)+'px)';dotsWrap.querySelectorAll('.carousel-dot').forEach(function(d,i){d.classList.toggle('active',i===current);});}
+  function resetTimer(){clearInterval(timer);timer=setInterval(function(){goTo(current+1);},4000);}
+  setTimeout(function(){setCardSizes();buildDots();goTo(0);resetTimer();},80);
+  window.addEventListener('resize',function(){setCardSizes();buildDots();goTo(0);});
+  wrap.addEventListener('mouseenter',function(){clearInterval(timer);});
+  wrap.addEventListener('mouseleave',resetTimer);
+  window.ductedRevSlide=function(dir){goTo(current+dir);resetTimer();};
+})();
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"The Guys Group, Ducted Aircon Cleaning Sydney","description":"Ducted aircon cleaning Sydney. Complete annual care package $349. New filter included, full internal system clean and professional sanitise. One flat price, no per-vent surprises.","telephone":"1300 380 090","address":{"@type":"PostalAddress","addressRegion":"NSW","addressCountry":"AU","addressLocality":"Sydney"},"areaServed":{"@type":"City","name":"Sydney"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"150","bestRating":"5","worstRating":"1"}}</script>
+
